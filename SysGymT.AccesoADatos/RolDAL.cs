@@ -74,14 +74,15 @@ namespace SysGymT.AccesoADatos
         }
         public static async Task<List<Rol>> SearchAsync(Rol pRol)
         {
-            var roles = new List<Rol>();
+            var rols = new List<Rol>();
             using (var bdContexto = new BDContexto())
             {
                 var select = bdContexto.Rol.AsQueryable();
                 select = QuerySelect(select, pRol);
-                roles = await select.ToListAsync();
+                //roles = await select.ToListAsync();
+                rols = await select.ToListAsync();
             }
-            return roles;
+            return rols;
         }
     }
 }

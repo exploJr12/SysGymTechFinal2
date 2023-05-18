@@ -19,9 +19,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
                 pRol.Top_Aux = 10;
             else if (pRol.Top_Aux == -1)
                 pRol.Top_Aux = 0;
-            var roles = await rolBL.SearchAsync(pRol);
+            var rols = await rolBL.SearchAsync(pRol);
             ViewBag.Top = pRol.Top_Aux;
-            return View(roles);
+            return View(rols);
         }
 
         // GET: RolController/Details/5

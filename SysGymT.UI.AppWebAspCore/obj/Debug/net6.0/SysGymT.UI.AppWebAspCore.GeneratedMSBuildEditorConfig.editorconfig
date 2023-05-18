@@ -9,41 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SysGymT.UI.AppWebAspCore
 build_property.RootNamespace = SysGymT.UI.AppWebAspCore
-build_property.ProjectDir = C:\Users\Not4l\Documents\SysGymTechD\SysGymT.UI.AppWebAspCore\
+build_property.ProjectDir = C:\Users\repco\source\repos\SysGymT\SysGymT.UI.AppWebAspCore\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Not4l\Documents\SysGymTechD\SysGymT.UI.AppWebAspCore
+build_property.MSBuildProjectDirectory = C:\Users\repco\source\repos\SysGymT\SysGymT.UI.AppWebAspCore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Home/Index.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Home/Privacy.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Machines/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcaW5kZXguY3NodG1s
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Shared/Error.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Rol/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Rol/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Rol/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Rol/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Rol/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/_ViewImports.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/CambiarPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYW1iaWFyUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/_ViewStart.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Not4l/Documents/SysGymTechD/SysGymT.UI.AppWebAspCore/Views/Shared/_Layout.cshtml]
+[C:/Users/repco/source/repos/SysGymT/SysGymT.UI.AppWebAspCore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-is3q528qhl

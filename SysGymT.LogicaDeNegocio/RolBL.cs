@@ -3,6 +3,7 @@ using SysGymT.EntidadesDeNegocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,6 +33,7 @@ namespace SysGymT.LogicaDeNegocio
         }
         public async Task<List<Rol>> SearchAsync(Rol pRol)
         {
+            //return await RolDAL.SearchAsync(pRol);
             return await RolDAL.SearchAsync(pRol);
         }
     }
