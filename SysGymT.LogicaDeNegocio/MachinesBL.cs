@@ -19,7 +19,7 @@ namespace SysGymT.LogicaDeNegocio
         {
             return await MachinesDAL.ModifyAsync(pMachines);
         }
-        public async Task<int> Delete(Machines pMachines)
+        public async Task<int> DeleteAsync(Machines pMachines)
         {
             return await MachinesDAL.DeleteAsync(pMachines);
         }
@@ -33,7 +33,7 @@ namespace SysGymT.LogicaDeNegocio
         }
         public async Task<List<Machines>> SearchAsync(Machines pMachines)
         {
-            return await MachinesDAL.SearchAsync(pMachines);
+            return await MachinesDAL.SearchASync(pMachines);
         }
     }
 }

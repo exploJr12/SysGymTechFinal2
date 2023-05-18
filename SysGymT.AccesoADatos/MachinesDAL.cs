@@ -75,12 +75,14 @@ namespace SysGymT.AccesoADatos
                 pQuery = pQuery.Take(pMachines.Top_Aux).AsQueryable();
             return pQuery;
         }
-        public static async Task<List<Machines>> SearchAsync(Machines pMachines)
+
+        // quite el estatic por que daba problemas
+        public static async Task<List<Machines>> SearchASync(Machines pMachines)
         {
             var machines = new List<Machines>();
-            using (var bdContexto = new BDContexto())
+            using (var bdContext = new BDContexto())
             {
-                var select = bdContexto.Machines.AsQueryable();
+                var select = bdContext.Machines.AsQueryable();
                 select = QuerySelect(select, pMachines);
                 machines = await select.ToListAsync();
             }
