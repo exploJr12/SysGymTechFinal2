@@ -1,0 +1,62 @@
+﻿@model SysGymT.EntidadesDeNegocio.Machines
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Machines</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id_Machines" class="control-label"></label>
+                <input asp-for="Id_Machines" class="form-control" />
+                <span asp-validation-for="Id_Machines" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Machines_Name" class="control-label"></label>
+                <input asp-for="Machines_Name" class="form-control" />
+                <span asp-validation-for="Machines_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Top_Aux" class="control-label"></label>
+                <input asp-for="Top_Aux" class="form-control" />
+                <span asp-validation-for="Top_Aux" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <button type="submit" value="Create" class="btn btn-primary">Guardar</button>
+            </div>
+
+            <span class="text-danger">@ViewBag.Error</span>
+        </form>
+    </div>
+</div>
+
+@{
+    var error = ViewBag.Error;
+}
+
+@if (!string.IsNullOrEmpty(error))
+{
+    <script>
+        console.log("@error");
+    </script>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
