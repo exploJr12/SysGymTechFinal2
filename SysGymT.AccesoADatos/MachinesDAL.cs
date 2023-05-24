@@ -35,7 +35,7 @@ namespace SysGymT.AccesoADatos
         }
         public static async Task<int> DeleteAsync(Machines pMachines)
         {
-            int result = 0;
+            int result = 0; 
             using (var bdContexto = new BDContexto())
             {
                 var machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
