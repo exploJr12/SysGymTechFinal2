@@ -3560,7 +3560,7 @@
       "projectName": "SysGymT.LogicaDeNegocio",
       "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
       "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGym7\\SysGymT.LogicaDeNegocio\\obj\\",
+      "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3627,7 +3627,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

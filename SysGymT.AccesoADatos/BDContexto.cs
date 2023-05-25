@@ -17,7 +17,7 @@ namespace SysGymT.AccesoADatos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=SysGymTech.mssql.somee.com;User ID=Explojr5_SQLLogin_1;Password=********;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer(@"Data Source=SysGymTech.mssql.somee.com;User ID=Explojr5_SQLLogin_1;Password=l6l6k8iqp2;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
     }
 }

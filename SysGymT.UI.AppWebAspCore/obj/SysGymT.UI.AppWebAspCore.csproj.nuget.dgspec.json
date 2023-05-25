@@ -11,7 +11,7 @@
         "projectName": "SysGymT.AccesoADatos",
         "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGym7\\SysGymT.AccesoADatos\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -146,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -157,7 +157,7 @@
         "projectName": "SysGymT.LogicaDeNegocio",
         "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGym7\\SysGymT.LogicaDeNegocio\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -246,6 +246,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -309,7 +310,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
