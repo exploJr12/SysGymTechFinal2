@@ -21,7 +21,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         }
         public async Task<IActionResult> Details(int id)
         {
-            var products = await ProductBL.GetByIdAsync(new Products { Id_products = id });
+            var products = await ProductBL.GetByIdAsync(new Products { Id_Products = id });
             return View(products);
         }
         public IActionResult Create()

@@ -12,21 +12,17 @@ namespace SysGymT.EntidadesDeNegocio
     {
         [Key]
         [Required]
-        public int Id_products { get; set; }
+        public int Id_Products { get; set; }
 
         [Required]
         public int Code { get; set; }
 
         [Required]
         [StringLength(25)]
-        public String Product_Name { get; set; }
+        public String Products_Name { get; set; }
 
         [StringLength(50)]
         public String Description { get; set; }
-
-        [Required]
-        public float Price { get; set; }
-
         [Required]
         [StringLength(25)]
         public String Type_Product { get; set; }

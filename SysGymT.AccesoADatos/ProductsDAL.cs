@@ -25,8 +25,8 @@ namespace SysGymT.AccesoADatos
             int result = 0;
             using (var bdContext = new BDContexto())
             {
-                var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_products == pProduct.Id_products);
-                products.Product_Name = pProduct.Product_Name;
+                var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_Products == pProduct.Id_Products);
+                products.Products_Name = pProduct.Products_Name;
                 bdContext.Update(products);
                 result = await bdContext.SaveChangesAsync();
             }
@@ -37,7 +37,7 @@ namespace SysGymT.AccesoADatos
             int result = 0;
             using (var bdContext = new BDContexto())
             {
-                var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_products == pProduct.Id_products);
+                var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_Products == pProduct.Id_Products);
                 bdContext.Products.Remove(products);
                 result = await bdContext.SaveChangesAsync();
             }
@@ -48,7 +48,7 @@ namespace SysGymT.AccesoADatos
             var products = new Products();
             using (var bdContext = new BDContexto())
             {
-                products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_products == pProduct.Id_products);
+                products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_Products == pProduct.Id_Products);
             }
             return products;
         }
@@ -63,11 +63,11 @@ namespace SysGymT.AccesoADatos
         }
         internal static IQueryable<Products> QuerySelect(IQueryable<Products> pQuery, Products pProduct)
         {
-            if (pProduct.Id_products > 0)
-                pQuery = pQuery.Where(s => s.Id_products == pProduct.Id_products);
-            if (!string.IsNullOrWhiteSpace(pProduct.Product_Name))
-                pQuery = pQuery.Where(s => s.Product_Name.Contains(pProduct.Product_Name));
-            pQuery = pQuery.OrderByDescending(s => s.Id_products).AsQueryable();
+            if (pProduct.Id_Products > 0)
+                pQuery = pQuery.Where(s => s.Id_Products == pProduct.Id_Products);
+            if (!string.IsNullOrWhiteSpace(pProduct.Products_Name))
+                pQuery = pQuery.Where(s => s.Products_Name.Contains(pProduct.Products_Name));
+            pQuery = pQuery.OrderByDescending(s => s.Id_Products).AsQueryable();
             if (pProduct.Top_Aux > 0)
                 pQuery = pQuery.Take(pProduct.Top_Aux).AsQueryable();
             return pQuery;
