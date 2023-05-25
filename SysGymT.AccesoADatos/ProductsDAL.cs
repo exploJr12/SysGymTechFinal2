@@ -26,7 +26,7 @@ namespace SysGymT.AccesoADatos
             using (var bdContext = new BDContexto())
             {
                 var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_products == pProduct.Id_products);
-                products.Product_name = pProduct.Product_name;
+                products.Product_Name = pProduct.Product_Name;
                 bdContext.Update(products);
                 result = await bdContext.SaveChangesAsync();
             }
@@ -65,8 +65,8 @@ namespace SysGymT.AccesoADatos
         {
             if (pProduct.Id_products > 0)
                 pQuery = pQuery.Where(s => s.Id_products == pProduct.Id_products);
-            if (!string.IsNullOrWhiteSpace(pProduct.Product_name))
-                pQuery = pQuery.Where(s => s.Product_name.Contains(pProduct.Product_name));
+            if (!string.IsNullOrWhiteSpace(pProduct.Product_Name))
+                pQuery = pQuery.Where(s => s.Product_Name.Contains(pProduct.Product_Name));
             pQuery = pQuery.OrderByDescending(s => s.Id_products).AsQueryable();
             if (pProduct.Top_Aux > 0)
                 pQuery = pQuery.Take(pProduct.Top_Aux).AsQueryable();

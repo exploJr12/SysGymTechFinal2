@@ -19,7 +19,7 @@ namespace SysGymT.EntidadesDeNegocio
 
         [Required]
         [StringLength(25)]
-        public String Product_name { get; set; }
+        public String Product_Name { get; set; }
 
         [StringLength(50)]
         public String Description { get; set; }
@@ -29,14 +29,10 @@ namespace SysGymT.EntidadesDeNegocio
 
         [Required]
         [StringLength(25)]
-        public String Type_product { get; set; }
+        public String Type_Product { get; set; }
 
         [Required]
-        public int existence { get; set; }
-
-        [Required]
-        [StringLength(25)]
-        public String Date_expiry { get; set; }
+        public int Existence { get; set; }
 
         [Required]
         [StringLength(25)]
@@ -44,7 +40,5 @@ namespace SysGymT.EntidadesDeNegocio
 
         [NotMapped]
         public int Top_Aux { get; set; }
-
-        //public List<Membership>? Memberships { get; set; }
     }
 }
