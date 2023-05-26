@@ -3530,19 +3530,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\repco\\.nuget\\packages\\": {}
+    "C:\\Users\\Not4l\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
+      "projectUniqueName": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
       "projectName": "SysGymT.AccesoADatos",
-      "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
-      "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGym7\\SysGymT.AccesoADatos\\obj\\",
+      "projectPath": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
+      "packagesPath": "C:\\Users\\Not4l\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.AccesoADatos\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Not4l\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3556,8 +3561,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
-              "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
+            "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
+              "projectPath": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
             }
           }
         }
@@ -3603,7 +3608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
