@@ -11,7 +11,7 @@ namespace SysGymT.AccesoADatos
     public class BDContexto : DbContext
     {
         public DbSet<Rol> Rol { get; set; }
-        public DbSet<User> User { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Machines> Machines { get; set; }  
         public DbSet<Products> Products { get; set; }
 

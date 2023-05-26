@@ -18,6 +18,6 @@ namespace SysGymT.EntidadesDeNegocio
         public string Name { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
-        public List<User> User { get; set; }
+        public List<Usuario> Usuario { get; set; }
     }
 }

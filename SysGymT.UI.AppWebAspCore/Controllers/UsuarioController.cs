@@ -1,90 +1,90 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using SysGymT.EntidadesDeNegocio;
-using SysGymT.LogicaDeNegocio;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SysGymT.EntidadesDeNegocio;
+using SysGymT.LogicaDeNegocio;
 using System.Security.Claims;
 
 namespace SysGymT.UI.AppWebAspCore.Controllers
-
-{     
+{
     [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
-    public class UserController : Controller
+    public class UsuarioController : Controller
     {
-        // GET: UserController
-        UserBL userBL = new UserBL();
+        UsuarioBL usuarioBL = new UsuarioBL();
         RolBL rolBL = new RolBL();
         // GET: UsuarioController
-        public async Task<IActionResult> Index(User pUser = null)
+        public async Task<IActionResult> Index(Usuario pUsuario = null)
         {
-            if (pUser == null)
-                pUser = new User();
-            if (pUser.Top_Aux == 0)
-                pUser.Top_Aux = 10;
-            else if (pUser.Top_Aux == -1)
-                pUser.Top_Aux = 0;
-            var taskBuscar = userBL.SearchIncluedeRolesAsync(pUser);
-            var taskObtenerTodosRoles = rolBL.GetAllAsync();
+            if (pUsuario == null)
+                pUsuario = new Usuario();
+            if (pUsuario.Top_Aux == 0)
+                pUsuario.Top_Aux = 10;
+            else if (pUsuario.Top_Aux == -1)
+                pUsuario.Top_Aux = 0;
+            var taskBuscar = usuarioBL.BuscarIncluirRolesAsync(pUsuario);
+            var taskObtenerTodosRoles = rolBL.GetByIdAsync(new Rol { Id_Rol = pUsuario.Id_Rol});
             var usuarios = await taskBuscar;
-            ViewBag.Top = pUser.Top_Aux;
-            ViewBag.Roles = await taskObtenerTodosRoles;
+            ViewBag.Top = pUsuario.Top_Aux;
+            //se movio
+            ViewBag.Roles = await rolBL.GetAllAsync();
             return View(usuarios);
         }
 
-        // GET: UserController/Details/5
+        // GET: UsuarioController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var user = await userBL.GetByIdAsync(new User { Id_User = id });
-            user.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = user.Id_Rol });
-            return View(user);
+            var usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = id });
+            usuario.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = usuario.Id_Rol });
+            return View(usuario);
         }
 
-        // GET: UserController/Create
+        // GET: UsuarioController/Create
         public async Task<IActionResult> Create()
         {
-            ViewBag.rol = await rolBL.GetAllAsync();
+            ViewBag.Roles = await rolBL.GetAllAsync();
             ViewBag.Error = "";
             return View();
         }
 
-        // POST: UserController/Create
+        // POST: UsuarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(User pUser)
+        public async Task<IActionResult> Create(Usuario pUsuario)
         {
             try
             {
-                int result = await userBL.CreateAsync(pUser);
+                int result = await usuarioBL.CrearAsync(pUsuario);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
-                ViewBag.rol = await rolBL.GetAllAsync();
-                return View(pUser);
+                ViewBag.Roles = await rolBL.GetAllAsync();
+                return View(pUsuario);
             }
         }
 
-        // GET: UserController/Edit/5
-        public async Task<IActionResult> Edit(User pUser)
+        // GET: UsuarioController/Edit/5
+        public async Task<IActionResult> Edit(Usuario pUsuario)
         {
-            var taskObtenerPorId = userBL.GetByIdAsync(pUser);
+            var taskObtenerPorId = usuarioBL.ObtenerPorIdAsync(pUsuario);
             var taskObtenerTodosRoles = rolBL.GetAllAsync();
-            var user = await taskObtenerPorId;
-            ViewBag.rol = await taskObtenerTodosRoles;
+            var usuario = await taskObtenerPorId;
+            ViewBag.Roles = await taskObtenerTodosRoles;
             ViewBag.Error = "";
-            return View(user);
+            return View(usuario);
         }
 
-        // POST: UserController/Edit/5
+        // POST: UsuarioController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, User pUsuario)
+        public async Task<IActionResult> Edit(int id, Usuario pUsuario)
         {
             try
             {
-                int result = await userBL.ModifyAsync(pUsuario);
+                int result = await usuarioBL.ModificarAsync(pUsuario);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
@@ -96,9 +96,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         }
 
         // GET: UsuarioController/Delete/5
-        public async Task<IActionResult> Delete(User pUsuario)
+        public async Task<IActionResult> Delete(Usuario pUsuario)
         {
-            var usuario = await userBL.GetByIdAsync(pUsuario);
+            var usuario = await usuarioBL.ObtenerPorIdAsync(pUsuario);
             usuario.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = usuario.Id_Rol });
             ViewBag.Error = "";
             return View(usuario);
@@ -107,20 +107,20 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // POST: UsuarioController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id, User pUsuario)
+        public async Task<IActionResult> Delete(int id, Usuario pUsuario)
         {
             try
             {
-                int result = await userBL.DeleteAsync(pUsuario);
+                int result = await usuarioBL.EliminarAsync(pUsuario);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
-                var usuario = await userBL.GetByIdAsync(pUsuario);
+                var usuario = await usuarioBL.ObtenerPorIdAsync(pUsuario);
                 if (usuario == null)
-                    usuario = new User();
-                if (usuario.Id_Rol > 0)
+                    usuario = new Usuario();
+                if (usuario.Id_Usuario > 0)
                     usuario.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = usuario.Id_Rol });
                 return View(usuario);
             }
@@ -139,15 +139,15 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(User pUsuario, string pReturnUrl = null)
+        public async Task<IActionResult> Login(Usuario pUsuario, string pReturnUrl = null)
         {
             try
             {
-                var user = await userBL.LoginAsync(pUsuario);
-                if (user != null && user.Id_Rol > 0 && pUsuario.Login == user.Login)
+                var usuario = await usuarioBL.LoginAsync(pUsuario);
+                if (usuario != null && usuario.Id_Usuario > 0 && pUsuario.Login == usuario.Login)
                 {
-                    user.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = user.Id_Rol });
-                    var claims = new[] { new Claim(ClaimTypes.Name, user.Login), new Claim(ClaimTypes.Role, user.Rol.Name) };
+                    usuario.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = usuario.Id_Rol });
+                    var claims = new[] { new Claim(ClaimTypes.Name, usuario.Login), new Claim(ClaimTypes.Role, usuario.Rol.Name) };
                     var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
                 }
@@ -156,13 +156,13 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
                 if (!string.IsNullOrWhiteSpace(pReturnUrl))
                     return Redirect(pReturnUrl);
                 else
-                    return RedirectToAction("Index", "User");
+                    return RedirectToAction("Index", "Home");
             }
             catch (Exception ex)
             {
                 ViewBag.Url = pReturnUrl;
                 ViewBag.Error = ex.Message;
-                return View(new User { Login = pUsuario.Login });
+                return View(new Usuario { Login = pUsuario.Login });
             }
         }
         [AllowAnonymous]
@@ -175,7 +175,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> CambiarPassword()
         {
 
-            var usuarios = await userBL.SearchAsync(new User { Login = User.Identity.Name, Top_Aux = 1 });
+            var usuarios = await usuarioBL.BuscarAsync(new Usuario { Login = User.Identity.Name, Top_Aux = 1 });
             var usuarioActual = usuarios.FirstOrDefault();
             ViewBag.Error = "";
             return View(usuarioActual);
@@ -184,18 +184,18 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // POST: UsuarioController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CambiarPassword(User pUsuario, string pPasswordAnt)
+        public async Task<IActionResult> CambiarPassword(Usuario pUsuario, string pPasswordAnt)
         {
             try
             {
-                int result = await userBL.ChangesPasswordAsync(pUsuario, pPasswordAnt);
+                int result = await usuarioBL.CambiarPasswordAsync(pUsuario, pPasswordAnt);
                 await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
                 return RedirectToAction("Login", "Usuario");
             }
             catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
-                var usuarios = await userBL.SearchAsync(new User { Login = User.Identity.Name, Top_Aux = 1 });
+                var usuarios = await usuarioBL.BuscarAsync(new Usuario { Login = User.Identity.Name, Top_Aux = 1 });
                 var usuarioActual = usuarios.FirstOrDefault();
                 return View(usuarioActual);
             }
