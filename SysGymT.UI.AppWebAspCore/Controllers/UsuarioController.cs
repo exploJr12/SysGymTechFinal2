@@ -99,6 +99,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> Delete(Usuario pUsuario)
         {
             var usuario = await usuarioBL.ObtenerPorIdAsync(pUsuario);
+            //es de arreglar tambien 
             usuario.Rol = await rolBL.GetByIdAsync(new Rol { Id_Rol = usuario.Id_Rol });
             ViewBag.Error = "";
             return View(usuario);

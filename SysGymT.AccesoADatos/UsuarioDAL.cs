@@ -59,11 +59,11 @@ namespace SysGymT.AccesoADatos
                 {
                     var usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.Id_Usuario == pUsuario.Id_Usuario);
                     //error de revisar por editar y supongamos que eliminar tambien
-                    usuario.Id_Rol = pUsuario.Id_Rol;
-                    usuario.Nombre = pUsuario.Nombre;
-                    usuario.Apellido = pUsuario.Apellido;
-                    usuario.Login = pUsuario.Login;
-                    usuario.Estatus = pUsuario.Estatus;
+                    usuario.Id_Rol = pUsuario?.Id_Rol;
+                    usuario.Nombre = pUsuario?.Nombre;
+                    usuario.Apellido = pUsuario?.Apellido;
+                    usuario.Login = pUsuario?.Login;
+                    usuario.Estatus = pUsuario?.Estatus;
                     bdContexto.Update(usuario);
                     result = await bdContexto.SaveChangesAsync();
                 }
