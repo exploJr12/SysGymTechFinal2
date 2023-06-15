@@ -14,6 +14,7 @@ namespace SysGymT.AccesoADatos
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Machines> Machines { get; set; }  
         public DbSet<Products> Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

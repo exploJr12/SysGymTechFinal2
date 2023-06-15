@@ -43,7 +43,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: UsuarioController/Create
         public async Task<IActionResult> Create()
         {
-            ViewBag.Roles = await rolBL.GetAllAsync();
+            ViewBag.Roles = await rolBL.GetAllAsync(); 
             ViewBag.Error = "";
             return View();
         }
@@ -60,7 +60,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.Error = ex.Message;
+                ViewBag.Error = "An error occurred while saving the entity changes: " + ex.InnerException?.Message;
                 ViewBag.Roles = await rolBL.GetAllAsync();
                 return View(pUsuario);
             }

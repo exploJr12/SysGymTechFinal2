@@ -3510,24 +3510,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Not4l\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\repco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+      "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
       "projectName": "SysGymT.EntidadesDeNegocio",
-      "projectPath": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
-      "packagesPath": "C:\\Users\\Not4l\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Not4l\\Desktop\\GymTechFINAL\\SysGymT.EntidadesDeNegocio\\obj\\",
+      "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+      "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Not4l\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3584,7 +3579,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
