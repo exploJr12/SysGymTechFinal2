@@ -17,7 +17,7 @@ namespace SysGymT.EntidadesDeNegocio
         public string Name_Customer { get; set; }
         [Required(ErrorMessage = "Nombre es obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 caracteres")]
-        public String Last_Name { get; set; }
+        public string Last_Name { get; set; }
         [Required]
         public int DUI { get; set; }
         [Required]
@@ -29,7 +29,7 @@ namespace SysGymT.EntidadesDeNegocio
         [Required]
         public int Age { get; set; }
         [Required]
-        public String Gender { get; set; }
+        public string Gender { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
     }
