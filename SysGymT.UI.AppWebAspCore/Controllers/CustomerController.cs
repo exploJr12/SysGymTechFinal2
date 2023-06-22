@@ -20,6 +20,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             else if (pCustomer.Top_Aux == -1)
                 pCustomer.Top_Aux = 0;
             var customers = await customerBL.SearchAsync(pCustomer);
+            //var customers = await customerBL.SearchAsync(pCustomer);
             ViewBag.Top = pCustomer.Top_Aux;
             return View(customers);
         }

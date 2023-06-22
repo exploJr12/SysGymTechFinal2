@@ -76,12 +76,12 @@ namespace SysGymT.AccesoADatos
                 if (pCustomer.DUI > 0)
                     pQuery = pQuery.Where(s => s.DUI == pCustomer.DUI);
                 if (pCustomer.Weight > 0)
-                    pQuery = pQuery.Where(s => s.Weight == pCustomer.Weight);
+                      pQuery = pQuery.Where(s => Math.Abs((double)s.Weight - (double)pCustomer.Weight) < double.Epsilon);
                 if (pCustomer.Telephone > 0)
                     pQuery = pQuery.Where(s => s.Telephone == pCustomer.Telephone);
                 if (pCustomer.Height > 0)
-                    pQuery = pQuery.Where(s => s.Height == pCustomer.Height);
-                pQuery = pQuery.OrderByDescending(s => s.Id_Customer).AsQueryable();
+                    pQuery = pQuery.Where(s => Math.Abs((double)s.Height - (double)pCustomer.Height) < double.Epsilon);
+                     pQuery = pQuery.OrderByDescending(s => s.Id_Customer).AsQueryable();
                 if (pCustomer.Top_Aux > 0)
                     pQuery = pQuery.Take(pCustomer.Top_Aux).AsQueryable();
                 return pQuery;

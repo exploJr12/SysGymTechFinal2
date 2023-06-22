@@ -20,5 +20,5 @@ namespace SysGymT.EntidadesDeNegocio
         public string Descryption { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
-    }
+}
 }

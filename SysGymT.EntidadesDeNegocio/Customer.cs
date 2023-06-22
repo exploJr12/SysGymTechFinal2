@@ -23,9 +23,9 @@ namespace SysGymT.EntidadesDeNegocio
         [Required]
         public int Telephone { get; set; }
         [Required]
-        public float Weight { get; set; }
+        public double Weight { get; set; }
         [Required]
-        public float Height { get; set; }
+        public double Height { get; set; }
         [Required]
         public int Age { get; set; }
         [Required]
