@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SysGymT.UI.AppWebAspCore",
+    "\\SysGymT.UI.AppWebAspCore\\Views",
+    "\\SysGymT.UI.AppWebAspCore\\Views\\Usuario"
   ],
-  "SelectedNode": "\\SysGymT.sln",
+  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\Views\\Usuario\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj": {}
+    "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj": {
+    "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
+        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
         "projectName": "SysGymT.AccesoADatos",
-        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
+        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
-                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
+              "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
               }
             }
           }
@@ -75,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
+    "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
         "projectName": "SysGymT.EntidadesDeNegocio",
-        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,18 +146,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj": {
+    "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
         "projectName": "SysGymT.LogicaDeNegocio",
-        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
+        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -174,11 +174,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj": {
-                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj"
+              "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj": {
+                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj"
               },
-              "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
-                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
+              "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
               }
             }
           }
@@ -224,18 +224,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj": {
+    "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj",
+        "projectUniqueName": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj",
         "projectName": "SysGymT.UI.AppWebAspCore",
-        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj",
+        "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.UI.AppWebAspCore\\SysGymT.UI.AppWebAspCore.csproj",
         "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.UI.AppWebAspCore\\obj\\",
+        "outputPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.UI.AppWebAspCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -246,18 +246,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
-                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
+              "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj"
               },
-              "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj": {
-                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGym7\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj"
+              "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj"
               }
             }
           }
@@ -310,7 +310,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
