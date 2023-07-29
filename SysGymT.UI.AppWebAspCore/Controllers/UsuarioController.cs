@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using SysGymT.EntidadesDeNegocio;
 using SysGymT.LogicaDeNegocio;
 using System.Security.Claims;
+using System.Diagnostics;
 
 namespace SysGymT.UI.AppWebAspCore.Controllers
 {
@@ -94,6 +95,8 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
                 return View(pUsuario);
             }
         }
+
+
 
         // GET: UsuarioController/Delete/5
         public async Task<IActionResult> Delete(Usuario pUsuario)

@@ -72,6 +72,7 @@ namespace SysGymT.AccesoADatos
             }
             return result;
         }
+
         public static async Task<int> EliminarAsync(Usuario pUsuario)
         {
             int result = 0;
