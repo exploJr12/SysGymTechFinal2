@@ -16,13 +16,25 @@ namespace SysGymT.EntidadesDeNegocio
         public int Id_Machines { get; set; }
 
         [Required]
-        [StringLength(50, ErrorMessage ="La cantidad maxima de caracteres permitida es de 50")]
-        [MinLength(3, ErrorMessage ="Lacantidad minima de caracteres permitida es de 3")]
+        [StringLength(50, ErrorMessage = "La cantidad maxima de caracteres permitida es de 50")]
+        [MinLength(3, ErrorMessage = "La cantidad minima de caracteres permitida es de 3")]
         public string? Machines_Name { get; set; }
 
-        [StringLength(50, ErrorMessage ="la cantidad maxima de carateres permitidos es de 30")]
+        [StringLength(50, ErrorMessage = "la cantidad maxima de carateres permitidos es de 30")]
         public string? Brand { get; set; }
 
+        [Required]
+        [StringLength(50, ErrorMessage = "La cantidad maxima de caracteres permitida es de 50")]
+        [MinLength(3, ErrorMessage = "La cantidad minima de caracteres permitida es de 3")]
+        public string? Serial_Number { get; set; }
+        [Required(ErrorMessage = "Estatus es obligatorio")]
+        public bool Status { get; set; }
+        [Display(Name = "Fecha adquisicion")]
+        public DateTime? Acquisition_Date { get; set; }
+        [Display(Name = "Fecha de mantenimiento")]
+        public DateTime? Maintenance_Date { get; set; }
+        [Display(Name = "Fecha proxima")]
+        public DateTime? Next_Maintenance_Date { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
     }

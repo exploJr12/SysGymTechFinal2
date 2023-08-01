@@ -28,15 +28,22 @@ namespace SysGymT.AccesoADatos
             {
                 var machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
                 machines.Machines_Name = pMachines.Machines_Name;
+                machines.Brand = pMachines.Brand;
+                machines.Status = pMachines.Status;
+                machines.Acquisition_Date = pMachines.Acquisition_Date;
+                machines.Maintenance_Date = pMachines.Maintenance_Date;
+                machines.Next_Maintenance_Date = pMachines.Next_Maintenance_Date;
+                machines.Serial_Number = pMachines.Serial_Number;
                 bdContexto.Update(machines);
                 result = await bdContexto.SaveChangesAsync();
             }
             return result;
         }
+
         public static async Task<int> DeleteAsync(Machines pMachines)
         {
-            int result = 0; 
-            using (var bdContexto = new BDContexto()) 
+            int result = 0;
+            using (var bdContexto = new BDContexto())
             {
                 var machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
                 bdContexto.Machines.Remove(machines);
@@ -44,6 +51,7 @@ namespace SysGymT.AccesoADatos
             }
             return result;
         }
+
         public static async Task<Machines> GetByIdAsync(Machines pMachines)
         {
             var machines = new Machines();
@@ -53,6 +61,7 @@ namespace SysGymT.AccesoADatos
             }
             return machines;
         }
+
         public static async Task<List<Machines>> GetAllAsync()
         {
             var machines = new List<Machines>();
@@ -62,6 +71,7 @@ namespace SysGymT.AccesoADatos
             }
             return machines;
         }
+
         internal static IQueryable<Machines> QuerySelect(IQueryable<Machines> pQuery, Machines pMachines)
         {
             if (pMachines.Id_Machines > 0)
@@ -76,7 +86,6 @@ namespace SysGymT.AccesoADatos
             return pQuery;
         }
 
-        // quite el estatic por que daba problemas
         public static async Task<List<Machines>> SearchASync(Machines pMachines)
         {
             var machines = new List<Machines>();
@@ -85,6 +94,7 @@ namespace SysGymT.AccesoADatos
                 var select = bdContext.Machines.AsQueryable();
                 select = QuerySelect(select, pMachines);
                 machines = await select.ToListAsync();
+                //machines = await select.ToListAsync();
             }
             return machines;
         }

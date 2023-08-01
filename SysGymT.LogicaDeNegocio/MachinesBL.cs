@@ -33,7 +33,8 @@ namespace SysGymT.LogicaDeNegocio
         }
         public async Task<List<Machines>> SearchAsync(Machines pMachines)
         {
-            return await MachinesDAL.SearchASync(pMachines);
+             return await MachinesDAL.SearchASync(pMachines);
+            //return await MachinesDAL.SearchASync(pMachines);
         }
     }
 }
