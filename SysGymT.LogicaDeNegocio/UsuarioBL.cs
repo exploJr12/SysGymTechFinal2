@@ -46,7 +46,7 @@ namespace SysGymT.LogicaDeNegocio
         }
         public async Task<List<Usuario>> BuscarIncluirRolesAsync(Usuario pUsuario)
         {
-            return await UsuarioDAL.BuscarIncluirRolesAsync(pUsuario);
+            return await UsuarioDAL.SearchIncludeUsuarioAsync(pUsuario);
         }
     }
 }

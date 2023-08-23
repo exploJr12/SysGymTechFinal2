@@ -139,7 +139,7 @@ namespace SysGymT.AccesoADatos
             return Usuarios;
         }
         #endregion
-        public static async Task<List<Usuario>> BuscarIncluirRolesAsync(Usuario pUsuario)
+        public static async Task<List<Usuario>> SearchIncludeUsuarioAsync(Usuario pUsuario)
         {
             var usuarios = new List<Usuario>();
             using (var bdContexto = new BDContexto())

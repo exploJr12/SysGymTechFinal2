@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -10,44 +11,54 @@ namespace SysGymT.AccesoADatos
 {
     public class MachinesDAL
     {
-        public static async Task<int> CreateAsync(Machines pMachines)
+        #region CRUD
+        public static async Task<int> CreateASync(Machines pMachines)
         {
             int result = 0;
-            using (var bdcontexto = new BDContexto())
+            using (var bdContexto = new BDContexto())
             {
-                bdcontexto.Add(pMachines);
-                result = await bdcontexto.SaveChangesAsync();
+                bdContexto.Add(pMachines);
+                result = await bdContexto.SaveChangesAsync();
             }
             return result;
         }
-
         public static async Task<int> ModifyAsync(Machines pMachines)
         {
             int result = 0;
             using (var bdContexto = new BDContexto())
             {
-                var machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
-                machines.Machines_Name = pMachines.Machines_Name;
-                machines.Brand = pMachines.Brand;
-                machines.Status = pMachines.Status;
-                machines.Acquisition_Date = pMachines.Acquisition_Date;
-                machines.Maintenance_Date = pMachines.Maintenance_Date;
-                machines.Next_Maintenance_Date = pMachines.Next_Maintenance_Date;
-                machines.Serial_Number = pMachines.Serial_Number;
-                bdContexto.Update(machines);
-                result = await bdContexto.SaveChangesAsync();
+                var existingMachines = await bdContexto.Machines.FirstOrDefaultAsync(m => m.Id_Machines == pMachines.Id_Machines);
+                if (existingMachines != null)
+                {
+                    existingMachines.Machines_Name = pMachines.Machines_Name;
+                    existingMachines.Brand = pMachines.Brand;
+                    existingMachines.Serial_Number = pMachines.Serial_Number;
+                    existingMachines.Status = pMachines.Status;
+                    existingMachines.Acquisition_Date = pMachines.Acquisition_Date;
+                    existingMachines.Maintenance_Date = pMachines.Maintenance_Date;
+                    existingMachines.Next_Maintenance_Date = pMachines.Next_Maintenance_Date;
+
+                    bdContexto.Update(existingMachines);
+                    result = await bdContexto.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("La máquina no existe");
+                }
             }
             return result;
         }
-
         public static async Task<int> DeleteAsync(Machines pMachines)
         {
             int result = 0;
             using (var bdContexto = new BDContexto())
             {
-                var machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
-                bdContexto.Machines.Remove(machines);
-                result = await bdContexto.SaveChangesAsync();
+                var existingMachines = await bdContexto.Machines.FirstOrDefaultAsync(m => m.Id_Machines == pMachines.Id_Machines);
+                if (existingMachines != null)
+                {
+                    bdContexto.Machines.Remove(existingMachines);
+                    result = await bdContexto.SaveChangesAsync();
+                }
             }
             return result;
         }
@@ -57,16 +68,17 @@ namespace SysGymT.AccesoADatos
             var machines = new Machines();
             using (var bdContexto = new BDContexto())
             {
-                machines = await bdContexto.Machines.FirstOrDefaultAsync(s => s.Id_Machines == pMachines.Id_Machines);
+                machines = await bdContexto.Machines.FirstOrDefaultAsync(m => m.Id_Machines == pMachines.Id_Machines);
             }
             return machines;
         }
-
         public static async Task<List<Machines>> GetAllAsync()
         {
             var machines = new List<Machines>();
             using (var bdContexto = new BDContexto())
             {
+                //machines = await bdContexto.Machines.ToListAsync();
+                //                machines = await bdContexto.Machines.ToListAsync();
                 machines = await bdContexto.Machines.ToListAsync();
             }
             return machines;
@@ -75,28 +87,63 @@ namespace SysGymT.AccesoADatos
         internal static IQueryable<Machines> QuerySelect(IQueryable<Machines> pQuery, Machines pMachines)
         {
             if (pMachines.Id_Machines > 0)
-                pQuery = pQuery.Where(s => s.Id_Machines == pMachines.Id_Machines);
+                pQuery = pQuery.Where(m => m.Id_Machines == pMachines.Id_Machines);
             if (!string.IsNullOrWhiteSpace(pMachines.Machines_Name))
-                pQuery = pQuery.Where(s => s.Machines_Name.Contains(pMachines.Machines_Name));
+                pQuery = pQuery.Where(m => m.Machines_Name.Contains(pMachines.Machines_Name));
             if (!string.IsNullOrWhiteSpace(pMachines.Brand))
-                pQuery = pQuery.Where(s => s.Brand.Contains(pMachines.Brand));
-            pQuery = pQuery.OrderByDescending(s => s.Brand).AsQueryable();
+                pQuery = pQuery.Where(m => m.Brand.Contains(pMachines.Brand));
+            if (!string.IsNullOrWhiteSpace(pMachines.Serial_Number))
+                pQuery = pQuery.Where(m => m.Serial_Number.Contains(pMachines.Serial_Number));
+            if (pMachines.Status)
+                pQuery = pQuery.Where(m => m.Status == pMachines.Status);
+            if (pMachines.Acquisition_Date.HasValue)
+            {
+                DateTime fechaInicial = pMachines.Acquisition_Date.Value.Date;
+                DateTime fechaFinal = fechaInicial.AddDays(1).AddMilliseconds(-1);
+                pQuery = pQuery.Where(m => m.Acquisition_Date >= fechaInicial && m.Acquisition_Date <= fechaFinal);
+            }
+            if (pMachines.Maintenance_Date.HasValue)
+            {
+                DateTime fechaInicial = pMachines.Maintenance_Date.Value.Date;
+                DateTime fechaFinal = fechaInicial.AddDays(1).AddMilliseconds(-1);
+                pQuery = pQuery.Where(m => m.Maintenance_Date >= fechaInicial && m.Maintenance_Date <= fechaFinal);
+            }
+            if (pMachines.Next_Maintenance_Date.HasValue)
+            {
+                DateTime fechaInicial = pMachines.Next_Maintenance_Date.Value.Date;
+                DateTime fechaFinal = fechaInicial.AddDays(1).AddMilliseconds(-1);
+                pQuery = pQuery.Where(m => m.Next_Maintenance_Date >= fechaInicial && m.Next_Maintenance_Date <= fechaFinal);
+            }
+            pQuery = pQuery.OrderByDescending(m => m.Id_Machines).AsQueryable();
             if (pMachines.Top_Aux > 0)
                 pQuery = pQuery.Take(pMachines.Top_Aux).AsQueryable();
             return pQuery;
         }
+        public static async Task<List<Machines>> SearchAsync(Machines pMachines)
+        {
+            var machine = new List<Machines>();
+            using (var bdContexto = new BDContexto())
+            {
+                var select = bdContexto.Machines.AsQueryable();
+                select = QuerySelect(select, pMachines);
+                machine = await select.ToListAsync();
+                //machine = await select.ToListAsync();
+            }
+            return machine;
+        }
 
-        public static async Task<List<Machines>> SearchASync(Machines pMachines)
+        #endregion
+        public static async Task<List<Machines>> SearchIncludeUsuarioAsync(Machines pMachines)
         {
             var machines = new List<Machines>();
-            using (var bdContext = new BDContexto())
+            using (var bdContexto = new BDContexto())
             {
-                var select = bdContext.Machines.AsQueryable();
-                select = QuerySelect(select, pMachines);
+                var select = bdContexto.Machines.AsQueryable();
+                select = QuerySelect( select, pMachines).Include(s => s.usuario).AsQueryable();
                 machines = await select.ToListAsync();
-                //machines = await select.ToListAsync();
             }
             return machines;
         }
+
     }
 }

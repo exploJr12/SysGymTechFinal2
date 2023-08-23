@@ -11,7 +11,7 @@ namespace SysGymT.EntidadesDeNegocio
     public class Usuario
     {
         [Key]
-        public int Id_Usuario{ get; set; }
+        public int Id_Usuario { get; set; }
         [ForeignKey("Rol")]
         [Required(ErrorMessage = "Rol es obligatorio")]
         [Display(Name = "Rol")]
@@ -34,6 +34,7 @@ namespace SysGymT.EntidadesDeNegocio
         [Display(Name = "Fecha registro")]
         public DateTime FechaRegistro { get; set; }
         public Rol Rol { get; set; }
+        public List<Machines> Machines{get; set;}
         [NotMapped]
         public int Top_Aux { get; set; }
         [NotMapped]

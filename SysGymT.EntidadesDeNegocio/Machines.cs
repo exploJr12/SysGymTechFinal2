@@ -14,6 +14,9 @@ namespace SysGymT.EntidadesDeNegocio
         [Required]
         [RegularExpression(@"^\d+$", ErrorMessage = "Unicamente se permiten valores numericos.")]
         public int Id_Machines { get; set; }
+        [ForeignKey("Usuario")]
+        [Display(Name = "Usuario")]
+        public int Id_Usuario { get; set; }
 
         [Required]
         [StringLength(50, ErrorMessage = "La cantidad maxima de caracteres permitida es de 50")]
@@ -35,6 +38,7 @@ namespace SysGymT.EntidadesDeNegocio
         public DateTime? Maintenance_Date { get; set; }
         [Display(Name = "Fecha proxima")]
         public DateTime? Next_Maintenance_Date { get; set; }
+        public Usuario usuario { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
     }
