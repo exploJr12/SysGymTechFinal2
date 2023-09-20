@@ -77,8 +77,6 @@ namespace SysGymT.AccesoADatos
             var machines = new List<Machines>();
             using (var bdContexto = new BDContexto())
             {
-                //machines = await bdContexto.Machines.ToListAsync();
-                //                machines = await bdContexto.Machines.ToListAsync();
                 machines = await bdContexto.Machines.ToListAsync();
             }
             return machines;
@@ -139,7 +137,7 @@ namespace SysGymT.AccesoADatos
             using (var bdContexto = new BDContexto())
             {
                 var select = bdContexto.Machines.AsQueryable();
-                select = QuerySelect( select, pMachines).Include(s => s.usuario).AsQueryable();
+                select = QuerySelect( select, pMachines).Include(s => s.Usuario).AsQueryable();
                 machines = await select.ToListAsync();
             }
             return machines;

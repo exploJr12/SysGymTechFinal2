@@ -23,6 +23,7 @@ namespace SysGymT.EntidadesDeNegocio
         [MinLength(3, ErrorMessage = "La cantidad minima de caracteres permitida es de 3")]
         public string? Machines_Name { get; set; }
 
+        [Required]
         [StringLength(50, ErrorMessage = "la cantidad maxima de carateres permitidos es de 30")]
         public string? Brand { get; set; }
 
@@ -38,8 +39,14 @@ namespace SysGymT.EntidadesDeNegocio
         public DateTime? Maintenance_Date { get; set; }
         [Display(Name = "Fecha proxima")]
         public DateTime? Next_Maintenance_Date { get; set; }
-        public Usuario usuario { get; set; }
+        public Usuario Usuario { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
+
+        public enum Status_Machine
+        {
+            ACTIVO = 1,
+            INACTIVO = 2
+        }
     }
 }
