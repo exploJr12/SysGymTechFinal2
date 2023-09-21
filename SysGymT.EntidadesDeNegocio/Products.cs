@@ -33,6 +33,8 @@ namespace SysGymT.EntidadesDeNegocio
         [Required]
         [StringLength(25)]
         public String Brand { get; set; }
+        [Required]
+        public decimal Price { get; set; }
 
         [NotMapped]
         public int Top_Aux { get; set; }

@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\SysGymT.EntidadesDeNegocio",
-    "\\SysGymT.UI.AppWebAspCore",
-    "\\SysGymT.UI.AppWebAspCore\\Views",
-    "\\SysGymT.UI.AppWebAspCore\\Views\\Service",
-    "\\SysGymT.UI.AppWebAspCore\\Views\\Usuario",
-    "\\SysGymTechAPI"
+    ""
   ],
-  "SelectedNode": "\\SysGymT.EntidadesDeNegocio\\Machines.cs",
+  "SelectedNode": "\\SysGymT.sln",
   "PreviewInSolutionExplorer": false
 }
