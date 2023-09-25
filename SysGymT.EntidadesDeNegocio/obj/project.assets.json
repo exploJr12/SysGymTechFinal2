@@ -3510,23 +3510,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\repco\\.nuget\\packages\\": {},
+    "C:\\Users\\nombr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\repco\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+      "projectUniqueName": "C:\\Users\\nombr\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
       "projectName": "SysGymT.EntidadesDeNegocio",
-      "projectPath": "C:\\Users\\repco\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
-      "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\obj\\",
+      "projectPath": "C:\\Users\\nombr\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+      "packagesPath": "C:\\Users\\nombr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nombr\\Source\\Repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\repco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nombr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -35,7 +35,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = id});
-            machine.usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
+            machine.Usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
 
             return View(machine);
         }
@@ -97,7 +97,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> Delete(Machines pMachine)
         {
             var machine = await machinesBL.GetByIdAsync(pMachine);
-            machine.usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
+            machine.Usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
             ViewBag.Error = "";
             return View(machine);
         }
@@ -119,7 +119,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
                 if (machine == null)
                     machine = new Machines();
                 if (machine.Id_Usuario > 0)
-                    machine.usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
+                    machine.Usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
                 return View(machine);
             }
         }
