@@ -31,6 +31,6 @@ namespace SysGymT.EntidadesDeNegocio
         public string Page_Type { get; set; }
         [Required]
         public decimal Sale_Total { get; set; }
-        public DateTime Register_Date { get; set; }
+        public DateTime? Register_Date { get; set; }
     }
 }

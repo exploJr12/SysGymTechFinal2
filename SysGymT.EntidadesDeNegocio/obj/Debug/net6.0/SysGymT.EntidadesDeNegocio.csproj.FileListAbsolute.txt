@@ -82,3 +82,17 @@ C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTechF
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.deps.json
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.runtimeconfig.json
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.AssemblyReference.cache
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfoInputs.cache
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfo.cs
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\refint\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
+C:\Users\nombr\Source\Repos\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll

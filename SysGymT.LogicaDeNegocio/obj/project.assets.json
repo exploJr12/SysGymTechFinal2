@@ -3561,7 +3561,7 @@
       "projectName": "SysGymT.LogicaDeNegocio",
       "projectPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
       "packagesPath": "C:\\Users\\repco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\repco\\Source\\Repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\obj\\",
+      "outputPath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3636,5 +3636,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.LogicaDeNegocio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

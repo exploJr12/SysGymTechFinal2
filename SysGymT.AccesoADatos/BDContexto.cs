@@ -12,10 +12,12 @@ namespace SysGymT.AccesoADatos
     {
         public DbSet<Rol> Rol { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Category> Category { get; set; }
         public DbSet<Machines> Machines { get; set; }  
         public DbSet<Products> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Bill> Bill { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
