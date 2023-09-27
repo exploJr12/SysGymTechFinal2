@@ -18,10 +18,7 @@ namespace SysGymT.EntidadesDeNegocio
         public int Id_Rol { get; set; }
         [Required(ErrorMessage = "Nombre es obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 caracteres")]
-        public string Nombre { get; set; }
-        [Required(ErrorMessage = "Apellido es obligatorio")]
-        [StringLength(30, ErrorMessage = "Maximo 30 caracteres")]
-        public string Apellido { get; set; }
+        public string Nombre_Completo { get; set; }
         [Required(ErrorMessage = "Login es obligatorio")]
         [StringLength(25, ErrorMessage = "Maximo 25 caracteres")]
         public string Login { get; set; }

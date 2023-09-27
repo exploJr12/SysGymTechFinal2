@@ -60,8 +60,7 @@ namespace SysGymT.AccesoADatos
                     var usuario = await bdContexto.Usuario.FirstOrDefaultAsync(s => s.Id_Usuario == pUsuario.Id_Usuario);
                     //error de revisar por editar y supongamos que eliminar tambien
                     usuario.Id_Rol = pUsuario.Id_Rol;
-                    usuario.Nombre = pUsuario.Nombre;
-                    usuario.Apellido = pUsuario.Apellido;
+                    usuario.Nombre_Completo = pUsuario.Nombre_Completo;
                     usuario.Login = pUsuario.Login;
                     usuario.Estatus = pUsuario.Estatus;
                     bdContexto.Update(usuario);
@@ -108,10 +107,8 @@ namespace SysGymT.AccesoADatos
                 pQuery = pQuery.Where(s => s.Id_Usuario == pUsuario.Id_Usuario);
             if (pUsuario.Id_Rol > 0)
                 pQuery = pQuery.Where(s => s.Id_Rol == pUsuario.Id_Rol);
-            if (!string.IsNullOrWhiteSpace(pUsuario.Nombre))
-                pQuery = pQuery.Where(s => s.Nombre.Contains(pUsuario.Nombre));
-            if (!string.IsNullOrWhiteSpace(pUsuario.Apellido))
-                pQuery = pQuery.Where(s => s.Apellido.Contains(pUsuario.Apellido));
+            if (!string.IsNullOrWhiteSpace(pUsuario.Nombre_Completo))
+                pQuery = pQuery.Where(s => s.Nombre_Completo.Contains(pUsuario.Nombre_Completo));
             if (!string.IsNullOrWhiteSpace(pUsuario.Login))
                 pQuery = pQuery.Where(s => s.Login.Contains(pUsuario.Login));
             if (pUsuario.Estatus > 0)

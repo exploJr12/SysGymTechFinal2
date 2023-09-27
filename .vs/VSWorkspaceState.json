@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SysGymT.EntidadesDeNegocio"
   ],
-  "SelectedNode": "\\SysGymT.sln",
+  "SelectedNode": "\\SysGymT.EntidadesDeNegocio\\Machines.cs",
   "PreviewInSolutionExplorer": false
 }
