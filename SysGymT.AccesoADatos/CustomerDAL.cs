@@ -27,6 +27,15 @@ namespace SysGymT.AccesoADatos
                 {
                     var customer = await bdContexto.Customers.FirstOrDefaultAsync(s => s.Id_Customer == pCustomer.Id_Customer);
                     customer.Name_Customer = pCustomer.Name_Customer;
+                    customer.Id_Membership = pCustomer.Id_Membership;
+                    customer.Name_Customer = pCustomer.Name_Customer;
+                    customer.Last_Name = pCustomer.Last_Name;
+                    customer.DUI = pCustomer.DUI;
+                    customer.Age = pCustomer.Age;
+                    customer.Gender = pCustomer.Gender;
+                    customer.Telephone = pCustomer.Telephone;
+                    customer.Height = pCustomer.Height;
+                    customer.Weight = pCustomer.Weight;
                     bdContexto.Update(customer);
                     result = await bdContexto.SaveChangesAsync();
                 }
@@ -65,6 +74,8 @@ namespace SysGymT.AccesoADatos
             {
                 if (pCustomer.Id_Customer > 0)
                     pQuery = pQuery.Where(s => s.Id_Customer == pCustomer.Id_Customer);
+                if (pCustomer.Id_Membership > 0)
+                     pQuery = pQuery.Where(s => s.Id_Membership == pCustomer.Id_Membership);
                 if (!string.IsNullOrWhiteSpace(pCustomer.Name_Customer))
                     pQuery = pQuery.Where(s => s.Name_Customer.Contains(pCustomer.Name_Customer));
                 if (!string.IsNullOrWhiteSpace(pCustomer.Last_Name))

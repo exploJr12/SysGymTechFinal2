@@ -21,5 +21,6 @@ namespace SysGymT.EntidadesDeNegocio
         public string Description { get; set; }
         [Required]
         public decimal Cost { get; set; }
+        public List<Customer> Customer { get; set; }
     }
 }

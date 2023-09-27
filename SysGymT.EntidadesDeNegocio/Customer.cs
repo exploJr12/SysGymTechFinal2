@@ -12,6 +12,10 @@ namespace SysGymT.EntidadesDeNegocio
     {
         [Key]
         public int Id_Customer { get; set; }
+        [ForeignKey("Membresia")]
+        [Required(ErrorMessage = "Membresia es obligatoria")]
+        [Display(Name = "Membresia")]
+        public int Id_Membership { get; set; }
         [Required(ErrorMessage = "Nombre es obligatorio")]
         [StringLength(30, ErrorMessage = "Maximo 30 caracteres")]
         public string Name_Customer { get; set; }
@@ -30,6 +34,8 @@ namespace SysGymT.EntidadesDeNegocio
         public int Age { get; set; }
         [Required]
         public string Gender { get; set; }
+        public Membership Membership { get; set; }
+
         [NotMapped]
         public int Top_Aux { get; set; }
     }
