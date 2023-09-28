@@ -27,6 +27,11 @@ namespace SysGymT.AccesoADatos
             {
                 var products = await bdContext.Products.FirstOrDefaultAsync(s => s.Id_Products == pProduct.Id_Products);
                 products.Products_Name = pProduct.Products_Name;
+                products.Brand = pProduct.Brand;
+                products.Code = pProduct.Code;
+                products.Existence = pProduct.Existence;
+                products.Price = pProduct.Price;
+                products.Description = pProduct.Description;
                 bdContext.Update(products);
                 result = await bdContext.SaveChangesAsync();
             }
@@ -67,6 +72,16 @@ namespace SysGymT.AccesoADatos
                 pQuery = pQuery.Where(s => s.Id_Products == pProduct.Id_Products);
             if (!string.IsNullOrWhiteSpace(pProduct.Products_Name))
                 pQuery = pQuery.Where(s => s.Products_Name.Contains(pProduct.Products_Name));
+            if (!string.IsNullOrWhiteSpace(pProduct.Description))
+                pQuery = pQuery.Where(s => s.Description.Contains(pProduct.Description));
+            if (!string.IsNullOrWhiteSpace(pProduct.Brand))
+                pQuery = pQuery.Where(s => s.Brand.Contains(pProduct.Brand));
+            if (pProduct.Price > 0M)
+                pQuery = pQuery.Where(s => s.Price == pProduct.Price);
+            if (pProduct.Existence > 0)
+                pQuery = pQuery.Where(s => s.Existence == pProduct.Existence);
+            if (pProduct.Code > 0)
+                pQuery = pQuery.Where(s => s.Code == pProduct.Code);
             pQuery = pQuery.OrderByDescending(s => s.Id_Products).AsQueryable();
             if (pProduct.Top_Aux > 0)
                 pQuery = pQuery.Take(pProduct.Top_Aux).AsQueryable();
