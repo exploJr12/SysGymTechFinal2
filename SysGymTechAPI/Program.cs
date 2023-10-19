@@ -1,9 +1,9 @@
-
 using SysGymT.AccesoADatos;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 
 builder.Services.AddDbContext<BDContexto>();
 builder.Services.AddControllers();
@@ -13,12 +13,21 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseCors(options =>
+{
+	options.WithOrigins("*");
+	options.AllowAnyMethod();
+	options.AllowAnyHeader();
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
@@ -27,3 +36,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+app.UseCors();
