@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Crear</a>
 </p>
 <table class="table">
     <thead>
@@ -17,9 +17,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Login)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Estatus)
@@ -43,9 +40,6 @@
                 @Html.DisplayFor(modelItem => item.Login)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Estatus)
             </td>
             <td>
@@ -55,9 +49,15 @@
                 @Html.DisplayFor(modelItem => item.Rol.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_Usuario">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_Usuario">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_Usuario">Delete</a>
+                <td class="botonestabla">
+                        @Html.ActionLink("Modificar", "Edit", new { Id_Usuario = item.Id_Usuario}, new { @class = "btn btn-success" })
+                </td>
+                <td class="botonestabla">
+                        @Html.ActionLink("Ver", "Details", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-info" })
+                </td>
+                <td class="botonestabla">
+                        @Html.ActionLink("Eliminar", "Delete", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-danger" })
+                </td>
             </td>
         </tr>
 }
