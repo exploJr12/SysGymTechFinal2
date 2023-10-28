@@ -43,6 +43,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: MachinesController/Create
         public async Task<IActionResult> Create()
         {
+            ViewBag.Usuario = await usuarioBL.ObtenerTodosAsync();
             ViewBag.Error = "";
             return View();
         }
