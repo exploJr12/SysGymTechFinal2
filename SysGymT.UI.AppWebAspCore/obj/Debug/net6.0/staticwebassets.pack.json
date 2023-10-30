@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\chemsCompressed.jpg"
     },
     {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\logo gym.png",
+      "PackagePath": "staticwebassets\\img\\logo gym.png"
+    },
+    {
       "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

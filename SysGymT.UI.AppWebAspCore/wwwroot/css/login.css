@@ -44,6 +44,7 @@
     margin: 10px 10px;
     border: 4px solid #FFB800;
     background: #000000;
+    opacity: 1;
 }
 
 .login-form {
@@ -86,15 +87,30 @@ p {
 
 .input-container1 {
     position: relative;
-    top: 40px; /* Mueve el primer input hacia abajo en 40px */
+    top: 80px; /* Mueve el segundo input hacia abajo en 40px */
     margin-bottom: 20px; /* Mantiene el espacio entre los inputs de 20px */
-}
 
+    color: white !; /* Color de texto negro */
+    border: none; /* Elimina los bordes predeterminados */
+    border-bottom: 2px solid #FFD700; /* Borde amarillo en la parte inferior */
+    outline: none;
+}
 .input-container2 {
     position: relative;
-    top: 40px; /* Mueve el segundo input hacia abajo en 40px */
+    top: 80px; /* Mueve el segundo input hacia abajo en 40px */
     margin-bottom: 20px; /* Mantiene el espacio entre los inputs de 20px */
+
+    color: white !important; /* Color de texto negro */
+    border: none; /* Elimina los bordes predeterminados */
+    border-bottom: 2px solid #FFD700; /* Borde amarillo en la parte inferior */
+    outline: none; 
 }
+
+    .input-container1 input[type="text"],
+    .input-container2 input[type="password"] {
+        color: white;
+    }
+
 
 
 .form-group {
@@ -102,7 +118,8 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 40px; /* Mueve todo el grupo de formulario hacia abajo 40px */
+    margin-top: 60px; /* Mueve todo el grupo de formulario hacia abajo 40px */
+    background-color: black;
 }
 
 
@@ -135,3 +152,32 @@ p {
     top: 0; /* Ajusta la posición vertical de la imagen */
     left: 0; /* Ajusta la posición horizontal de la imagen */
 }
+
+/* Estilos para las etiquetas que funcionan como marcadores de posición */
+.input-container1,
+.input-container2 {
+    position: relative;
+}
+
+/* Estilo para el label del input de usuario */
+.placeholder-label {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: #FFB800; /* Color del texto del marcador de posición */
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.change-text-color {
+    color: white !important;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Esto centrará verticalmente el contenido */
+    justify-content: center; /* Esto centrará horizontalmente el contenido */
+    height: 100vh; /* Esto garantiza que ocupe toda la altura de la ventana */
+    margin-left: -85px !important;
+}
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iXW/WwNkiluiQ9oc78/VfoednT+nsS4YmsIIPnfy6JU=",
+  "Hash": "75qjZi+lZX3dEFxh0WkVQVtgijdBkGB4vs3UD8XfCXI=",
   "Source": "SysGymT.UI.AppWebAspCore",
   "BasePath": "_content/SysGymT.UI.AppWebAspCore",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\chemsCompressed.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\logo gym.png",
+      "SourceId": "SysGymT.UI.AppWebAspCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\",
+      "BasePath": "_content/SysGymT.UI.AppWebAspCore",
+      "RelativePath": "img/logo gym.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo gym.png"
     },
     {
       "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\js\\site.js",
