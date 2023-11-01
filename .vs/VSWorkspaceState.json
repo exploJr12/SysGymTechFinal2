@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SysGymT.EntidadesDeNegocio"
+    "\\SysGymT.UI.AppWebAspCore",
+    "\\SysGymT.UI.AppWebAspCore\\wwwroot",
+    "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css"
   ],
-  "SelectedNode": "\\SysGymT.sln",
+  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\login.css",
   "PreviewInSolutionExplorer": false
 }

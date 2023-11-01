@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "75qjZi+lZX3dEFxh0WkVQVtgijdBkGB4vs3UD8XfCXI=",
+  "Hash": "CX9zymjcwXslcJkymEj9kdrqVaRYGPBalufvDo8Zy6A=",
   "Source": "SysGymT.UI.AppWebAspCore",
   "BasePath": "_content/SysGymT.UI.AppWebAspCore",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines\\index.css",
+      "SourceId": "SysGymT.UI.AppWebAspCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\",
+      "BasePath": "_content/SysGymT.UI.AppWebAspCore",
+      "RelativePath": "css/machines/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\machines\\index.css"
     },
     {
       "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\site.css",

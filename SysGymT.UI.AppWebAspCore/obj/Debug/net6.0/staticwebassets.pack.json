@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines\\index.css",
+      "PackagePath": "staticwebassets\\css\\machines\\index.css"
+    },
+    {
       "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

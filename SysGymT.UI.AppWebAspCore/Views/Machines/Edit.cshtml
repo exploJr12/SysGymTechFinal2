@@ -13,16 +13,27 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id_Machines" />
+            <input type="hidden" asp-for="Id_Machines" class="form-control" />
 
-            <div class="form-group">
-                <label asp-for="Id_Usuario" class="control-label"></label>
-                <select asp-for="Id_Usuario" class="form-control">
-                    @foreach (var item in usuarios)
-                    {
-                        <option value="@item.Id_Usuario">@item.Nombre_Completo</option>
-                    }
-                </select>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="Id_Usuario" class="control-label"></label>
+                    <select asp-for="Id_Usuario" class="form-control">
+                        <option selected value="">SELECCIONAR</option>
+                        @foreach (var users in usuarios)
+                        {
+                            if (Model.Id_Usuario == users.Id_Usuario)
+                            {
+                                <option selected value="@users.Id_Usuario">@users.Nombre_Completo</option>
+                            }
+                            else
+                            {
+                                <option value="@users.Id_Usuario">@users.Nombre_Completo</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="Id_Usuario" class="text-danger"></span>
+                </div>
             </div>
 
             <div class="form-group">
