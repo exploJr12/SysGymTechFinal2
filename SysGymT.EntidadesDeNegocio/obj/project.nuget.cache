@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kqGYiKm4sHCChTliaTY6v4+mKVHGH6YthBOM+jCnuc0S7aQh4kvK1M/HGvL1/1uVS1I7T0kvrjLgyrhMC0QsqQ==",
+  "dgSpecHash": "RkAsAO1UVlqPjfIgRt5UqYNjPMh8stzbgLkvjcPSOK88C1hxti1xV3wm0YMg42nORFHDmKp5zZVy1ctFUVcmRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
+  "projectFilePath": "C:\\Users\\repco\\OneDrive\\Documentos\\GitHub\\SysGymTech\\SysGymT.EntidadesDeNegocio\\SysGymT.EntidadesDeNegocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\repco\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\repco\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
