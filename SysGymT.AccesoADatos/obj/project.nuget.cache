@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EEceUoKYx/yzgk5gvaS5RO/c6Vs3Oqb9g/1WrOt9fvsjFKef6LoLFmpFWjGghM0mwyHwb8Rx3w1rDOE6pmU4JA==",
+  "dgSpecHash": "8qYvilg1TLY9Gz809+A1UniXU8AlERrqgxPKda4OJyee71DMHR0BcP9EEJSJTC1C9K5B2k1bSuBu0uCQjhBrBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\repco\\source\\repos\\SysGymTechFINAL\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
+  "projectFilePath": "C:\\Users\\repco\\OneDrive\\Documentos\\GitHub\\SysGymTech\\SysGymT.AccesoADatos\\SysGymT.AccesoADatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\repco\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\repco\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

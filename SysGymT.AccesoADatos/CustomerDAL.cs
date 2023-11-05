@@ -27,7 +27,7 @@ namespace SysGymT.AccesoADatos
                 {
                     var customer = await bdContexto.Customers.FirstOrDefaultAsync(s => s.Id_Customer == pCustomer.Id_Customer);
                     customer.Name_Customer = pCustomer.Name_Customer;
-                    customer.Id_Membership = pCustomer.Id_Membership;
+                    customer.Membership = pCustomer.Membership;
                     customer.Name_Customer = pCustomer.Name_Customer;
                     customer.Last_Name = pCustomer.Last_Name;
                     customer.DUI = pCustomer.DUI;
@@ -74,8 +74,6 @@ namespace SysGymT.AccesoADatos
             {
                 if (pCustomer.Id_Customer > 0)
                     pQuery = pQuery.Where(s => s.Id_Customer == pCustomer.Id_Customer);
-                if (pCustomer.Id_Membership > 0)
-                     pQuery = pQuery.Where(s => s.Id_Membership == pCustomer.Id_Membership);
                 if (!string.IsNullOrWhiteSpace(pCustomer.Name_Customer))
                     pQuery = pQuery.Where(s => s.Name_Customer.Contains(pCustomer.Name_Customer));
                 if (!string.IsNullOrWhiteSpace(pCustomer.Last_Name))
@@ -84,15 +82,17 @@ namespace SysGymT.AccesoADatos
                     pQuery = pQuery.Where(s => s.Gender.Contains(pCustomer.Gender));
                 if (pCustomer.Age > 0)
                     pQuery = pQuery.Where(s => s.Age == pCustomer.Age);
-                if (pCustomer.DUI > 0)
-                    pQuery = pQuery.Where(s => s.DUI == pCustomer.DUI);
-                if (pCustomer.Weight > 0)
+                if (!string.IsNullOrWhiteSpace(pCustomer.DUI))
+                    pQuery = pQuery.Where(s => s.DUI.Contains(pCustomer.DUI));
+            if (pCustomer.Weight > 0)
                       pQuery = pQuery.Where(s => Math.Abs((double)s.Weight - (double)pCustomer.Weight) < double.Epsilon);
                 if (pCustomer.Telephone > 0)
                     pQuery = pQuery.Where(s => s.Telephone == pCustomer.Telephone);
                 if (pCustomer.Height > 0)
                     pQuery = pQuery.Where(s => Math.Abs((double)s.Height - (double)pCustomer.Height) < double.Epsilon);
-                     pQuery = pQuery.OrderByDescending(s => s.Id_Customer).AsQueryable();
+                if (!string.IsNullOrWhiteSpace(pCustomer.Membership))
+                     pQuery = pQuery.Where(s => s.Membership.Contains(pCustomer.Membership));
+                 pQuery = pQuery.OrderByDescending(s => s.Id_Customer).AsQueryable();
                 if (pCustomer.Top_Aux > 0)
                     pQuery = pQuery.Take(pCustomer.Top_Aux).AsQueryable();
                 return pQuery;
@@ -105,8 +105,9 @@ namespace SysGymT.AccesoADatos
                     var select = bdContexto.Customers.AsQueryable();
                     select = QuerySelect(select, pCustomer);
                     customers = await select.ToListAsync();
-                }
-                return customers;
+                    //customers = await select.ToListAsync();
+            }
+            return customers;
             }
         }
     }
