@@ -1,2 +1,87 @@
-﻿body {
+﻿th tr thead table {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: #000000;
+}
+
+/* action buttons*/
+
+.image-inside-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+p, table, th, td, a {
+    color: white;
+}
+
+/* EDIT BUTTON */
+
+.edit-button {
+    color: #fff;
+    background-color: #00871c;
+    border-color: #007bff;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block; 
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+    .edit-button:hover {
+        background-color: #1e6724;
+        border-color: #0052cc;
+    }
+
+    .edit-button:focus, .edit-button.focus {
+        background-color: #1e6724;
+        border-color: #0052cc;
+    }
+
+    .edit-button:disabled, .edit-button.disabled {
+        background-color: #007bff;
+        border-color: #007bff;
+        cursor: not-allowed;
+    }
+
+
+/* SEE BUTTON */
+.see-button {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+    .see-button:hover {
+        background-color: #138496;
+        border-color: #117a8b;
+    }
+
+    .see-button:focus, .see-button.focus {
+        background-color: #138496;
+        border-color: #117a8b;
+    }
+
+    .see-button:disabled, .see-button.disabled {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        cursor: not-allowed;
+    }
+
+.image-inside-button {
+    margin-left: 5px;
 }

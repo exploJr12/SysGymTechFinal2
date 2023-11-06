@@ -10,46 +10,22 @@
     List<SysGymT.EntidadesDeNegocio.Usuario> usuarios = ViewBag.Usuario;
 }
 
-<h1>Index</h1>
-
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Maquinaria</title>
+    <link rel="stylesheet" href="~/css/machines/index.css">
+</head>
 <p>
-    <a asp-action="Create" type="submit" class="btn btn-primary">Crear</a>
+    <a asp-action="Create" class="btn btn-success" type="submit">
+        Agregar
+        <img src="~/img/machines/agregar-documento.png" id="invert"/>
+    </a>
 </p>
-<table class="table">
+<table class="table custom-table">
     <thead>
         <tr>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label class="control-label">Rol</label>
-                    <select name="Id_Usuario" class="form-control">
-                        <option selected value="0">SELECCIONAR</option>
-                        @foreach (var item in usuarios)
-                        {
-                            <option value="@item.Id_Usuario">@item.Nombre_Completo</option>
-                        }
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="form-group">
-                    <label class="control-label">Top</label>
-                    <select name="Top_Aux" class="form-control">
-                        @foreach (var item in tops)
-                        {
-                            string strItem = item != -1 ? item.ToString() : "Todos";
-                            if (item != topActual)
-                            {
-                                <option value="@item">@strItem</option>
-                            }
-                            else
-                            {
-                                <option selected value="@item">@strItem</option>
-                            }
-                        }
-                    </select>
-                </div>
-            </div>
             <th>
                 @Html.DisplayNameFor(model => model.Id_Usuario)
             </th>
@@ -78,51 +54,60 @@
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
             <tr class="table table-responsive paginationjs">
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.Nombre_Completo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Machines_Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Serial_Number)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Acquisition_Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Maintenance_Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
-            </td>
-            <td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Modificar", "Edit", new { Id_Machines = item.Id_Machines}, new { @class = "btn btn-success" })
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario.Nombre_Completo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Machines_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Serial_Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Acquisition_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Maintenance_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
                 </td>
                 <td class="botonestabla">
-                        @Html.ActionLink("Ver", "Details", new { Id_Machines = item.Id_Machines }, new { @class = "btn btn-info" })
+                    <a asp-action="Edit" asp-route-Id_Machines="@item.Id_Machines" class="edit-button">
+                        <img src="~/img/machines/archivo-de-edicion.png" class="image-inside-button" />
+                    </a>
                 </td>
+
                 <td class="botonestabla">
-                        @Html.ActionLink("Eliminar", "Delete", new { Id_Machines = item.Id_Machines }, new { @class = "btn btn-danger" })
+                    <a asp-action="Details" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-info see-button">
+                        <img src="~/img/machines/wach-icon.png" class="image-inside-button" />
+                    </a>
                 </td>
-            </td>
-        </tr>
+
+                <td class="botonestabla">
+                    <a asp-action="Delete" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-danger delete-button">
+                        <img src="~/img/machines/delete-icon.png" class="image-inside-button" />
+                    </a>
+                </td>
+
+            </tr>
+            <p></p>
             numRegistros++;
             if (numRegistros == numRegistrosPorPage)
             {
                 numPage++;
                 numRegistros = 0;
             }
-    }
+        }
         @{
             if (numRegistros == 0)
             {
@@ -147,3 +132,8 @@
         </div>
     </div>
 }
+
+<!--
+    icons by:
+    <a target="_blank" href="https://icons8.com/icon/60022/visible">Visible</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+-->
