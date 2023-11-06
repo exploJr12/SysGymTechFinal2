@@ -78,7 +78,7 @@ namespace SysGymT.AccesoADatos
             var machines = new List<Machines>();
             using (var bdContexto = new BDContexto())
             {
-                machines = await bdContexto.Machines.ToListAsync();
+                machines = await bdContexto.Machines.Include(s => s.Usuario).AsQueryable().ToListAsync();
             }
             return machines;
         }

@@ -32,9 +32,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         }
 
 
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int Id_Machines)
         {
-            var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = id});
+            var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = Id_Machines });
             machine.Usuario = await usuarioBL.ObtenerPorIdAsync( new Usuario { Id_Usuario = machine.Id_Usuario });
 
             return View(machine);

@@ -85,3 +85,13 @@ p, table, th, td, a {
 .image-inside-button {
     margin-left: 5px;
 }
+
+.main-container {
+    background-color: #2B2A24;
+   /* border: 30px solid #2B2A24;*/
+    border-radius: 20px;
+}
+
+.table {
+    border-radius: 10px;
+}

@@ -23,99 +23,100 @@
         <img src="~/img/machines/agregar-documento.png" id="invert"/>
     </a>
 </p>
-<table class="table custom-table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id_Usuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Machines_Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Serial_Number)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Acquisition_Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Maintenance_Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Next_Maintenance_Date)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="table table-responsive paginationjs">
-                <td>
-                    @Html.DisplayFor(modelItem => item.Usuario.Nombre_Completo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Machines_Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Serial_Number)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Acquisition_Date)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Maintenance_Date)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
-                </td>
-                <td class="botonestabla">
-                    <a asp-action="Edit" asp-route-Id_Machines="@item.Id_Machines" class="edit-button">
-                        <img src="~/img/machines/archivo-de-edicion.png" class="image-inside-button" />
-                    </a>
-                </td>
-
-                <td class="botonestabla">
-                    <a asp-action="Details" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-info see-button">
-                        <img src="~/img/machines/wach-icon.png" class="image-inside-button" />
-                    </a>
-                </td>
-
-                <td class="botonestabla">
-                    <a asp-action="Delete" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-danger delete-button">
-                        <img src="~/img/machines/delete-icon.png" class="image-inside-button" />
-                    </a>
-                </td>
-
+<div class="main-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Usuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Machines_Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Brand)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Serial_Number)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Acquisition_Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Maintenance_Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Next_Maintenance_Date)
+                </th>
             </tr>
-            <p></p>
-            numRegistros++;
-            if (numRegistros == numRegistrosPorPage)
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
             {
-                numPage++;
-                numRegistros = 0;
+                <tr class="table table-responsive paginationjs">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Usuario.Nombre_Completo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Machines_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Brand)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Serial_Number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Acquisition_Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Maintenance_Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
+                    </td>
+                    <td class="botonestabla">
+                        <a asp-action="Edit" asp-route-Id_Machines="@item.Id_Machines" class="edit-button">
+                            <img src="~/img/machines/archivo-de-edicion.png" class="image-inside-button" />
+                        </a>
+                    </td>
+
+                    <td class="botonestabla">
+                        <a asp-action="Details" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-info see-button">
+                            <img src="~/img/machines/wach-icon.png" class="image-inside-button" />
+                        </a>
+                    </td>
+
+                    <td class="botonestabla">
+                        <a asp-action="Delete" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-danger delete-button">
+                            <img src="~/img/machines/delete-icon.png" class="image-inside-button" />
+                        </a>
+                    </td>
+
+                </tr>
+                <p></p>
+                numRegistros++;
+                if (numRegistros == numRegistrosPorPage)
+                {
+                    numPage++;
+                    numRegistros = 0;
+                }
             }
-        }
-        @{
-            if (numRegistros == 0)
-            {
-                numPage--;
+            @{
+                if (numRegistros == 0)
+                {
+                    numPage--;
+                }
             }
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
 
 @if (numPage > 1)
 {
