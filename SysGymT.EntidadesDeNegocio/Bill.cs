@@ -34,6 +34,10 @@ namespace SysGymT.EntidadesDeNegocio
         [Required]
         public decimal Sale { get; set; }
         public DateTime? Register_Date { get; set; }
+
+        public Usuario usuario { get; set; }
+        public Customer customer { get; set;}
+        public Products products { get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
     }

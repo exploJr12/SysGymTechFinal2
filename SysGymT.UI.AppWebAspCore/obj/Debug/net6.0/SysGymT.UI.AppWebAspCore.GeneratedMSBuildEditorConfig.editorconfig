@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.UI.AppWebAspCore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/repco/OneDrive/Documentos/GitHub/SysGymTech/SysGymT.UI.AppWebAspCore/Views/Bill/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/repco/OneDrive/Documentos/GitHub/SysGymTech/SysGymT.UI.AppWebAspCore/Views/Bill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/repco/OneDrive/Documentos/GitHub/SysGymTech/SysGymT.UI.AppWebAspCore/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

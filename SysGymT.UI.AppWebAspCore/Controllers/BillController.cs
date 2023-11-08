@@ -26,38 +26,36 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             else if (pBill.Top_Aux == -1)
                 pBill.Top_Aux = 0;
 
-            // Search for bills with products, users, and customers
-            var taskBuscarBills = billBL.SearchIncludeProductsAsync(pBill);
+            var taskBuscarBills = billBL.SearchAsync(pBill);
             var taskBuscarProducts = productsBL.GetByIdAsync(new Products { Id_Products = pBill.Id_Products });
             var taskBuscarUsuarios = usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = pBill.Id_Usuario });
             var taskBuscarCustomers = customerBL.GetByIdAsync(new Customer {  Id_Customer = pBill.Id_Customer});
 
-            // Get all products, users, and customers
             var taskObtenerTodosProducts = productsBL.GetallAsync();
             var taskObtenerTodosUsuarios = usuarioBL.ObtenerTodosAsync();
             var taskObtenerTodosCustomers = customerBL.GetAllAsync();
 
-            // Wait for all tasks to complete
             var bills = await taskBuscarBills;
             var products = await taskBuscarProducts;
             var usuarios = await taskBuscarUsuarios;
             var customers = await taskBuscarCustomers;
 
-            // Add the bills, products, users, and customers to the view bag
             ViewBag.Top = pBill.Top_Aux;
-            ViewBag.Bills = bills;
-            ViewBag.Products = products;
-            ViewBag.Usuarios = usuarios;
-            ViewBag.Customers = customers;
+            ViewBag.Products = await productsBL.GetallAsync();
+            ViewBag.Usuarios = await usuarioBL.ObtenerTodosAsync();
+            ViewBag.Customers = await customerBL.GetAllAsync();
 
-            // Return the view
             return View(bills);
         }
 
         // GET: BillController/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            return View();
+            var bill = await billBL.GetByIdAsync(new Bill { Id_Bill = id });
+            bill.customer = await customerBL.GetByIdAsync(new Customer { Id_Customer = bill.Id_Customer });
+            bill.usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = bill.Id_Usuario });
+            bill.products = await productsBL.GetByIdAsync(new Products { Id_Products = bill.Id_Products });
+            return View(bill);
         }
 
         // GET: BillController/Create
