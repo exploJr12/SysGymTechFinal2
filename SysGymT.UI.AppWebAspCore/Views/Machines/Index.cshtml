@@ -51,6 +51,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Next_Maintenance_Date)
                 </th>
+                <th class="action-th">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -81,6 +82,7 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
                     </td>
+
                     <td class="botonestabla">
                         <a asp-action="Edit" asp-route-Id_Machines="@item.Id_Machines" class="edit-button">
                             <img src="~/img/machines/archivo-de-edicion.png" class="image-inside-button" />

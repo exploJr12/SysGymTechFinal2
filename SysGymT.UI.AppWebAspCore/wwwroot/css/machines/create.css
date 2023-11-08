@@ -37,6 +37,8 @@ a {
     width: 600px;
     margin: 0 auto;
     padding: 20px;
+    border: solid 5px #FFB800;
+    border-radius: 20px;
 }
 
 .form-control{
@@ -86,4 +88,8 @@ a {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0.25rem;
+}
+
+.btn-cancel{
+
 }
