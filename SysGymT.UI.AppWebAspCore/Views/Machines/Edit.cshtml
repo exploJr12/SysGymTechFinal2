@@ -5,36 +5,36 @@
     List<SysGymT.EntidadesDeNegocio.Usuario> usuarios = ViewBag.Usuario;
 }
 
-<link rel="stylesheet" href="~/css/machines/index.css">
-<h1>Editar</h1>
+<link rel="stylesheet" href="~/css/machines/create.css"> <!-- Utiliza el mismo CSS que el formulario de creación -->
 
-<h4>Maquinaria</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 offset-md-4 main-div text-center">
+        <!-- Mantén la misma estructura principal -->
         <form asp-action="Edit">
+            <h1>Editar</h1>
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id_Machines" class="form-control" />
 
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="Id_Usuario" class="control-label"></label>
-                    <select asp-for="Id_Usuario" class="form-control">
-                        <option selected value="">SELECCIONAR</option>
-                        @foreach (var users in usuarios)
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Id_Usuario" class="control-label"></label>
+                <select asp-for="Id_Usuario" class="form-control">
+                    <option selected value="">SELECCIONAR</option>
+                    @foreach (var users in usuarios)
+                    {
+                        if (Model.Id_Usuario == users.Id_Usuario)
                         {
-                            if (Model.Id_Usuario == users.Id_Usuario)
-                            {
-                                <option selected value="@users.Id_Usuario">@users.Nombre_Completo</option>
-                            }
-                            else
-                            {
-                                <option value="@users.Id_Usuario">@users.Nombre_Completo</option>
-                            }
+                            <option selected value="@users.Id_Usuario">@users.Nombre_Completo</option>
                         }
-                    </select>
-                    <span asp-validation-for="Id_Usuario" class="text-danger"></span>
-                </div>
+                        else
+                        {
+                            <option value="@users.Id_Usuario">@users.Nombre_Completo</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="Id_Usuario" class="text-danger"></span>
             </div>
 
             <div class="form-group">
@@ -73,15 +73,13 @@
                 <input asp-for="Next_Maintenance_Date" class="form-control" />
                 <span asp-validation-for="Next_Maintenance_Date" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-warning" /> <!-- Utiliza el mismo estilo que el formulario de creación -->
+                <a asp-action="Index" class="btn btn-danger ml-2">Cancelar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

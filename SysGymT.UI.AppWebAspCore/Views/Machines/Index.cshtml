@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="~/css/machines/index.css">
 </head>
 <p>
-    <a asp-action="Create" class="btn btn-success" type="submit">
+    <a asp-action="Create" class="btn btn-warning" type="submit">
         Agregar
-        <img src="~/img/machines/agregar-documento.png" id="invert"/>
+        <img src="~/img/machines/add-icon.png" id="invert"/>
     </a>
 </p>
 <div class="main-container">
@@ -85,19 +85,19 @@
 
                     <td class="botonestabla">
                         <a asp-action="Edit" asp-route-Id_Machines="@item.Id_Machines" class="edit-button">
-                            <img src="~/img/machines/archivo-de-edicion.png" class="image-inside-button" />
+                            <img src="~/img/machines/editar.png" class="image-inside-button" />
                         </a>
                     </td>
 
                     <td class="botonestabla">
                         <a asp-action="Details" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-info see-button">
-                            <img src="~/img/machines/wach-icon.png" class="image-inside-button" />
+                            <img src="~/img/machines/see-icon.png" class="image-inside-button" />
                         </a>
                     </td>
 
                     <td class="botonestabla">
                         <a asp-action="Delete" asp-route-Id_Machines="@item.Id_Machines" class="btn btn-danger delete-button">
-                            <img src="~/img/machines/delete-icon.png" class="image-inside-button" />
+                            <img src="~/img/machines/trash-icon.png" class="image-inside-button" />
                         </a>
                     </td>
 

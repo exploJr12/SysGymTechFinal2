@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\img\\logo gym.png"
     },
     {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\add-icon.png",
+      "PackagePath": "staticwebassets\\img\\machines\\add-icon.png"
+    },
+    {
       "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\agregar-documento.png",
       "PackagePath": "staticwebassets\\img\\machines\\agregar-documento.png"
     },
@@ -47,6 +51,18 @@
     {
       "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\delete-icon.png",
       "PackagePath": "staticwebassets\\img\\machines\\delete-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\editar.png",
+      "PackagePath": "staticwebassets\\img\\machines\\editar.png"
+    },
+    {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\see-icon.png",
+      "PackagePath": "staticwebassets\\img\\machines\\see-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\trash-icon.png",
+      "PackagePath": "staticwebassets\\img\\machines\\trash-icon.png"
     },
     {
       "Id": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\SysGymTech\\SysGymT.UI.AppWebAspCore\\wwwroot\\img\\machines\\wach-icon.png",

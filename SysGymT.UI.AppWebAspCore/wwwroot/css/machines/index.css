@@ -21,12 +21,12 @@ p, table, th, td, a {
 /* EDIT BUTTON */
 
 .edit-button {
-    color: #fff;
-    background-color: #00871c;
+    color: #FFB800;
+    background-color: #FFB800;
     border-color: #007bff;
     padding: 5px 10px;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
@@ -34,7 +34,7 @@ p, table, th, td, a {
 }
 
     .edit-button:hover {
-        background-color: #1e6724;
+        background-color: #e4a805;
         border-color: #0052cc;
     }
 
@@ -53,7 +53,7 @@ p, table, th, td, a {
 /* SEE BUTTON */
 .see-button {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #FFB800;
     border-color: #17a2b8;
     padding: 5px 10px;
     text-decoration: none;

@@ -1,18 +1,18 @@
-﻿/* Cambiar el fondo a negro y el color del texto a blanco */
-body {
+﻿body {
     background-color: #212121;
     color: #ffd800;
 }
 
-/* Estilo del formulario */
-.form-group, input, select, .form-check {
-    background: none; /* Cambiamos "background-color" a "background: none" para quitar el fondo */
+.form-group,
+input,
+select,
+.form-check {
+    background: none;
     color: #fff;
     padding: 10px;
     margin: 5px;
 }
 
-/* Estilo de los botones con toques amarillos */
 .btn-primary {
     background-color: #ffc107;
     color: #000;
@@ -26,12 +26,10 @@ body {
         background-color: #ffdb58;
     }
 
-/* Cambiar el color del enlace "Back to List" */
 a {
     color: #ffc107;
 }
 
-/* Estilo del div principal del formulario */
 .main-div {
     background-color: #000;
     width: 600px;
@@ -41,20 +39,18 @@ a {
     border-radius: 20px;
 }
 
-.form-control{
+.form-control {
     max-width: 400px;
     display: block;
     margin: 0 auto;
     position: relative;
 }
 
-/* Estilo de los labels */
 .form-group label {
-    display: block; 
+    display: block;
     text-align: center;
 }
 
-/* Estilo para alinear el checkbox a la derecha del label con 30px de separación */
 .form-label {
     display: flex;
     justify-content: space-between;
@@ -70,26 +66,13 @@ a {
     border-radius: 0.25rem;
 }
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0.25rem;
+#cancel-button {
+    margin-right: 200px !important;
+    margin-left: 0 !important; /* Asegúrate de restablecer el margen izquierdo */
 }
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0.25rem;
-}
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0.25rem;
-}
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0.25rem;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0.25rem;
-}
-
-.btn-cancel{
-
+.create-title {
+    text-align: center;
 }
