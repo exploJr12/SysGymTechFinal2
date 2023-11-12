@@ -71,8 +71,16 @@ a {
     margin-left: 0 !important; /* Asegúrate de restablecer el margen izquierdo */
 }
 
-
-
 .create-title {
     text-align: center;
+}
+
+.form-group.form-check {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.form-check-input {
+    margin-top: 5px; /* Ajusta el espacio entre el label y el checkbox */
 }

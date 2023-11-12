@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="~/css/login.css">
     </head>
     <body>
-        <div class="logo">
+        <div class="img-back">
             <img src="~/img/logo gym.png" />
         </div>
         
@@ -35,14 +35,14 @@
                         </div>
 
                     <div class="input-container1">
-                        <input asp-for="Login" id="usuario" class="form-control centered-input" oninput="moveLabel(this)" style="opacity: 0; color: #FFF;" />
+                        <input asp-for="Login" id="usuario" class="form-control centered-input" oninput="moveLabel(this)" style="color: #FFF;" />
 
                         <label for="usuario" class="placeholder-label">Usuario</label>
                     </div>
                     <span asp-validation-for="Login" class="text-danger"></span>
 
                     <div class="input-container2">
-                        <input asp-for="Password" id="password" class="form-control text-light" oninput="moveLabel(this)" style="opacity: 0; color: #FFF" />
+                        <input asp-for="Password" id="password" class="form-control text-light" oninput="moveLabel(this)" style="color: #FFF" />
                         <label for="password" class="placeholder-label">Contraseña</label>
                     </div>
                     <span asp-validation-for="Password" class="text-danger"></span>

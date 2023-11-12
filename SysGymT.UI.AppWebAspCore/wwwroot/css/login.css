@@ -16,7 +16,7 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: #FFB800; /* Reemplaza "color1" con el color que desees para la mitad izquierda */
+    background-color: #FFB800;
     z-index: -2;
 }
 
@@ -26,17 +26,17 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: #21201C; /* Reemplaza "color2" con el color que desees para la mitad derecha */
+    background-color: #21201C;
     z-index: -2;
 }
 
 .login-container {
     position: fixed;
-    top: 50%; /* Ajusta la posición verticalmente */
-    left: 76%;
+    top: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: white; /* Color de fondo para el contenedor de inicio de sesión */
+    background: white;
     padding: 20px;
     width: 400px;
     height: 400px;
@@ -45,6 +45,7 @@
     border: 4px solid #FFB800;
     background: #000000;
     opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 184, 0, 0.8);
 }
 
 .login-form {
@@ -71,70 +72,65 @@ p {
     line-height: 0px;
     position: fixed;
     bottom: 40px;
-    left: 115px; /* Mueve el botón 40px a la izquierda de la posición actual */
+    left: 115px;
+    transition: box-shadow 0.3s ease;
 }
 
+.button-login:hover {
+    box-shadow: 0 0 20px rgba(255, 184, 0, 0.8);
+}
 
 .text-danger {
-    margin-top: 0px; /* Mueve los dos span hacia abajo en 40px */
-    display: block; /* Hace que los span sean bloques para agregar espacio entre ellos */
-    margin-bottom: 0px; /* Mantiene el espacio entre los span de 20px */
-    background-color: #000; /* Fondo de color de span en negro */
-    color: #FFB800; /* Color del texto del placeholder en amarillo */
-    padding: 25px; /* Agrega relleno para los span */
+    margin-top: 0px;
+    display: block;
+    margin-bottom: 0px;
+    background-color: #000;
+    color: #FFB800;
+    padding: 25px;
     height: 15px;
 }
 
-.input-container1 {
-    position: relative;
-    top: 80px; /* Mueve el segundo input hacia abajo en 40px */
-    margin-bottom: 20px; /* Mantiene el espacio entre los inputs de 20px */
-
-    color: white !; /* Color de texto negro */
-    border: none; /* Elimina los bordes predeterminados */
-    border-bottom: 2px solid #FFD700; /* Borde amarillo en la parte inferior */
-    outline: none;
-}
+.input-container1,
 .input-container2 {
     position: relative;
-    top: 80px; /* Mueve el segundo input hacia abajo en 40px */
-    margin-bottom: 20px; /* Mantiene el espacio entre los inputs de 20px */
-
-    color: white !important; /* Color de texto negro */
-    border: none; /* Elimina los bordes predeterminados */
-    border-bottom: 2px solid #FFD700; /* Borde amarillo en la parte inferior */
-    outline: none; 
+    top: 80px;
+    border-bottom: 2px solid #FFD700;
 }
 
     .input-container1 input[type="text"],
     .input-container2 input[type="password"] {
-        color: white;
+        color: white !important;
+        border: none;
+        background: transparent;
+        width: 100%;
+        box-sizing: border-box;
+        height: 30px;
+        font-size: 16px;
+        outline: none;
+        box-shadow: none;
     }
-
-
 
 .form-group {
     display: fixed;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 60px; /* Mueve todo el grupo de formulario hacia abajo 40px */
+    margin-top: 60px;
     background-color: black;
 }
 
-
 .text-danger[for="Login"] {
-    margin-top: 0; /* Evita que el span de "Login" empuje hacia abajo el input de contraseña */
+    margin-top: 0;
 }
 
 .circle {
-    width: 140px; /* Define el ancho deseado */
-    height: 140px; /* Define la altura deseada */
-    background-color: #3498db; /* Color de fondo del círculo */
-    border-radius: 50%; /* Convierte el cuadrado en un círculo */
-    position: absolute; /* Coloca el círculo en una posición absoluta */
-    top: 20px; /* Ajusta la posición vertical del círculo */
-    left: 20px; /* Ajusta la posición horizontal del círculo */
+    width: 140px;
+    height: 140px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .img-container {
@@ -148,23 +144,21 @@ p {
     width: 130px;
     border-radius: 50%;
     border: 3px solid #FFB800;
-    position: absolute; /* Establece la posición absoluta para la imagen */
-    top: 0; /* Ajusta la posición vertical de la imagen */
-    left: 0; /* Ajusta la posición horizontal de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* Estilos para las etiquetas que funcionan como marcadores de posición */
 .input-container1,
 .input-container2 {
     position: relative;
 }
 
-/* Estilo para el label del input de usuario */
 .placeholder-label {
     position: absolute;
     top: 7px;
     left: 10px;
-    color: #FFB800; /* Color del texto del marcador de posición */
+    color: #FFB800;
     pointer-events: none;
     transition: 0.2s;
 }
@@ -175,9 +169,20 @@ p {
 
 .logo-container {
     display: flex;
-    align-items: center; /* Esto centrará verticalmente el contenido */
-    justify-content: center; /* Esto centrará horizontalmente el contenido */
-    height: 100vh; /* Esto garantiza que ocupe toda la altura de la ventana */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin-left: -85px !important;
 }
 
+.img-back {
+    position: fixed;
+    top: 44%;
+    left: 48px;
+    transform: translateY(-50%);
+}
+
+    .img-back img {
+        display: block;
+        margin: 0 auto;
+    }

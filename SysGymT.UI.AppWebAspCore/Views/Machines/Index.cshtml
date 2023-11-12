@@ -74,13 +74,13 @@
                         @Html.DisplayFor(modelItem => item.Status)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Acquisition_Date)
+                        @Html.DisplayFor(modelItem => item.Acquisition_Date, "{0:yyyy-MM-dd}")
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Maintenance_Date)
+                        @Html.DisplayFor(modelItem => item.Maintenance_Date, "{0:yyyy-MM-dd}")
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Next_Maintenance_Date)
+                        @Html.DisplayFor(modelItem => item.Next_Maintenance_Date, "{0:yyyy-MM-dd}")
                     </td>
 
                     <td class="botonestabla">

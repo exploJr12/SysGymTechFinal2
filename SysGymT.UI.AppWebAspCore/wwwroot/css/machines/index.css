@@ -117,3 +117,10 @@ hr {
 
 }
 
+.form-check-input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c; /* Color de fondo del checkbox */
+    border: none; /* Sin borde */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no es seleccionable */
+}
