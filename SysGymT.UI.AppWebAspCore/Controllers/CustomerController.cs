@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SysGymT.EntidadesDeNegocio;
 using SysGymT.LogicaDeNegocio;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using SysGymT.AccesoADatos;
-
 
 namespace SysGymT.UI.AppWebAspCore.Controllers
 {
@@ -13,7 +11,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
     {
         CustomerBL customerBL = new CustomerBL();
         // GET: CustomerController
-        public  async Task<IActionResult> Index(Customer pCustomer = null)
+        public async Task<IActionResult> Index(Customer pCustomer = null)
         {
             if (pCustomer == null)
                 pCustomer = new Customer();
@@ -22,6 +20,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             else if (pCustomer.Top_Aux == -1)
                 pCustomer.Top_Aux = 0;
             var customers = await customerBL.SearchAsync(pCustomer);
+            //var customers = await customerBL.SearchAsync(pCustomer);
             ViewBag.Top = pCustomer.Top_Aux;
             return View(customers);
         }
@@ -29,8 +28,8 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var customers = await customerBL.GetByIdAsync(new Customer { Id_Customer = id });
-            return View(customers);
+            var customer = await customerBL.GetByIdAsync(new Customer { Id_Customer = id });
+            return View(customer);
         }
 
         // GET: CustomerController/Create
@@ -60,9 +59,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Edit/5
         public async Task<IActionResult> Edit(Customer pCustomer)
         {
-            var customers = await customerBL.GetByIdAsync(pCustomer);
+            var customer = await customerBL.GetByIdAsync(pCustomer);
             ViewBag.Error = "";
-            return View(pCustomer);
+            return View();
         }
 
         // POST: CustomerController/Edit/5
@@ -72,10 +71,10 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         {
             try
             {
-                int result = await customerBL.ModifyAsync(pCustomer);   
+                int result = await customerBL.ModifyAsync(pCustomer);
                 return RedirectToAction(nameof(Index));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
                 return View(pCustomer);
@@ -85,9 +84,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Delete/5
         public async Task<IActionResult> Delete(Customer pCustomer)
         {
-            ViewBag.Error =  "";
-            var customers = await customerBL.GetByIdAsync(pCustomer);
-            return View();
+            ViewBag.Error = "";
+            var customer = await customerBL.GetByIdAsync(pCustomer);
+            return View(customer);
         }
 
         // POST: CustomerController/Delete/5
@@ -100,7 +99,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
                 int result = await customerBL.DeleteAsync(pCustomer);
                 return RedirectToAction(nameof(Index));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
                 return View(pCustomer);

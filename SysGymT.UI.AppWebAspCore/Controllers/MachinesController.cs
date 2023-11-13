@@ -23,19 +23,19 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             else if (pMachines.Top_Aux == -1)
                 pMachines.Top_Aux = 0;
             var taskSearch = machinesBL.GetAllAsync(pMachines);
-            //var taskObtenerTodosUsuarios = usuarioBL.ObtenerTodosAsync(new Usuario { Id_Usuario = pMachines.Id_Usuario });
-            //var machines = await taskSearch;
+            var getAllUsers = usuarioBL.ObtenerTodosAsync();
+
             var machines = await taskSearch;
             ViewBag.Top = pMachines.Top_Aux;
-            ViewBag.Usuario = await usuarioBL.ObtenerTodosAsync();
+            ViewBag.Usuario = await getAllUsers;
             return View(machines);
         }
 
 
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int Id_Machines)
         {
-            var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = id});
-            machine.Usuario = await usuarioBL.ObtenerPorIdAsync(new Usuario { Id_Usuario = machine.Id_Usuario });
+            var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = Id_Machines });
+            machine.Usuario = await usuarioBL.ObtenerPorIdAsync( new Usuario { Id_Usuario = machine.Id_Usuario });
 
             return View(machine);
         }
@@ -43,6 +43,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: MachinesController/Create
         public async Task<IActionResult> Create()
         {
+            ViewBag.Usuario = await usuarioBL.ObtenerTodosAsync();
             ViewBag.Error = "";
             return View();
         }

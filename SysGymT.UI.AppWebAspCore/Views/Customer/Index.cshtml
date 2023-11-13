@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Crear</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -35,9 +35,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Gender)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Membership)
             </th>
             <th></th>
         </tr>
@@ -70,18 +67,9 @@
                 @Html.DisplayFor(modelItem => item.Gender)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Membership)
-            </td>
-            <td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Modificar", "Edit", new { Id_Customer = item.Id_Customer}, new { @class = "btn btn-success" })
-                </td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Ver", "Details", new { Id_Customer = item.Id_Customer }, new { @class = "btn btn-info" })
-                </td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Eliminar", "Delete", new { Id_Customer = item.Id_Customer }, new { @class = "btn btn-danger" })
-                </td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Customer">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Customer">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Customer">Delete</a>
             </td>
         </tr>
 }

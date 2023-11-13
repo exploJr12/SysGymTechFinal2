@@ -30,6 +30,7 @@ namespace SysGymT.AccesoADatos
                 var existingMachines = await bdContexto.Machines.FirstOrDefaultAsync(m => m.Id_Machines == pMachines.Id_Machines);
                 if (existingMachines != null)
                 {
+                    existingMachines.Id_Usuario = pMachines.Id_Usuario;
                     existingMachines.Machines_Name = pMachines.Machines_Name;
                     existingMachines.Brand = pMachines.Brand;
                     existingMachines.Serial_Number = pMachines.Serial_Number;
@@ -77,7 +78,7 @@ namespace SysGymT.AccesoADatos
             var machines = new List<Machines>();
             using (var bdContexto = new BDContexto())
             {
-                machines = await bdContexto.Machines.ToListAsync();
+                machines = await bdContexto.Machines.Include(s => s.Usuario).AsQueryable().ToListAsync();
             }
             return machines;
         }

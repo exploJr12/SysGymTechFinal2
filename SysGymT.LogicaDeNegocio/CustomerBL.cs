@@ -33,6 +33,7 @@ namespace SysGymT.LogicaDeNegocio
         public async Task<List<Customer>> SearchAsync(Customer pCustomer)
         {
             return await CustomerDAL.SearchAsync(pCustomer);
+            //return await CustomerDAL.SearchAsync(pCustomer);
         }
     }
 }

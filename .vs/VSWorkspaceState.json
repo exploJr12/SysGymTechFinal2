@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SysGymT.EntidadesDeNegocio"
+    "\\SysGymT.UI.AppWebAspCore",
+    "\\SysGymT.UI.AppWebAspCore\\Views",
+    "\\SysGymT.UI.AppWebAspCore\\Views\\Machines",
+    "\\SysGymT.UI.AppWebAspCore\\Views\\Shared",
+    "\\SysGymT.UI.AppWebAspCore\\wwwroot",
+    "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css",
+    "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines"
   ],
-  "SelectedNode": "\\SysGymT.sln",
+  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\Views\\Machines\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }

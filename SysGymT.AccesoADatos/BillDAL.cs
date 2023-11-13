@@ -35,7 +35,6 @@ namespace SysGymT.AccesoADatos
                     existingBill.Descriptions = pBill.Descriptions;
                     existingBill.Page_Type = pBill.Page_Type;
                     existingBill.Sale_Total = pBill.Sale_Total;
-                    existingBill.Sale = pBill.Sale;
 
                     bdContexto.Update(existingBill);
                     result = await bdContexto.SaveChangesAsync();
@@ -93,10 +92,6 @@ namespace SysGymT.AccesoADatos
                 pQuery = pQuery.Where(b => b.Descriptions.Contains(pBill.Descriptions));
             if (!string.IsNullOrWhiteSpace(pBill.Page_Type))
                 pQuery = pQuery.Where(b => b.Page_Type.Contains(pBill.Page_Type));
-            if (pBill.Sale > 0M)
-                pQuery = pQuery.Where(s => s.Sale == pBill.Sale);
-            if (pBill.Sale_Total > 0M)
-                pQuery = pQuery.Where(s => s.Sale_Total == pBill.Sale_Total);
             if (pBill.Register_Date.HasValue)
             {
                 DateTime fechaInicial = pBill.Register_Date.Value.Date;
@@ -104,8 +99,6 @@ namespace SysGymT.AccesoADatos
                 pQuery = pQuery.Where(b => b.Register_Date >= fechaInicial && b.Register_Date <= fechaFinal);
             }
             pQuery = pQuery.OrderByDescending(b => b.Id_Bill).AsQueryable();
-            if (pBill.Top_Aux > 0)
-                pQuery = pQuery.Take(pBill.Top_Aux).AsQueryable();
             return pQuery;
         }
         public static async Task<List<Bill>> SearchAsync(Bill pBill)

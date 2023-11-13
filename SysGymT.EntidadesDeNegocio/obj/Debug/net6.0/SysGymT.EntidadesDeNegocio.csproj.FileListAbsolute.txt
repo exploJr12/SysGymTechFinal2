@@ -124,17 +124,17 @@ C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\gymtechApi\
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\gymtechApi\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\gymtechApi\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
 C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\gymtechApi\SysGymTechFINAL\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.deps.json
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.runtimeconfig.json
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.AssemblyReference.cache
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfoInputs.cache
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfo.cs
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\refint\SysGymT.EntidadesDeNegocio.dll
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
-C:\Users\repco\OneDrive\Documentos\GitHub\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.deps.json
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.runtimeconfig.json
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.AssemblyReference.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfoInputs.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfo.cs
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\refint\SysGymT.EntidadesDeNegocio.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\SysGymTech\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll

@@ -1,38 +1,81 @@
-﻿@model SysGymT.EntidadesDeNegocio.Usuario
+﻿    @model SysGymT.EntidadesDeNegocio.Usuario
 
-@{
-    ViewData["Title"] = "Login";
-}
-
-<p>Iniciar session</p>
-<div class="row">
-    <div class="col-md-12">
-        <form asp-action="Login">
-            <input type="hidden" name="pReturnUrl" value="@ViewBag.Url" />
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="Login" class="control-label"></label>
-                    <input asp-for="Login" class="form-control" />
-                    <span asp-validation-for="Login" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label asp-for="Password" class="control-label"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
-            </div>
-            <span class="text-danger">@ViewBag.Error</span>
-        </form>
-    </div>
-</div>
-
-@section Scripts {
     @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        ViewData["Title"] = "Login";
     }
-}
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="~/css/login.css">
+    </head>
+    <body>
+        <div class="img-back">
+            <img src="~/img/logo gym.png" />
+        </div>
+        
+        <div class="background-container">
+            <div class="left-background-login"></div>
+            <div class="right-background-login"></div>
+        </div>
+
+        <div class="login-container">
+            <p></p>
+            <p></p>
+            <div class="row">
+                <div class="col-md-12">
+                    <form asp-action="Login" class="login-form">
+                        <input type="hidden" name="pReturnUrl" value="@ViewBag.Url" />
+
+                        <div class="img-container">
+                            <img src="~/img/chemsCompressed.jpg" class="imagen" />
+                        </div>
+
+                    <div class="input-container1">
+                        <input asp-for="Login" id="usuario" class="form-control centered-input" oninput="moveLabel(this)" style="color: #FFF;" />
+
+                        <label for="usuario" class="placeholder-label">Usuario</label>
+                    </div>
+                    <span asp-validation-for="Login" class="text-danger"></span>
+
+                    <div class="input-container2">
+                        <input asp-for="Password" id="password" class="form-control text-light" oninput="moveLabel(this)" style="color: #FFF" />
+                        <label for="password" class="placeholder-label">Contraseña</label>
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+
+
+                        <input type="submit" value="Iniciar" class="button-login" />
+                        <span class="text-danger">@ViewBag.Error</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+
+<script>
+    function moveLabel(input) {
+        const label = input.nextElementSibling;
+        if (input.value) {
+            label.style.transform = 'translateY(-40px)';
+        } else {
+            label.style.transform = 'translateY(0)';
+        }
+
+    }
+    function changeTextColor(input) {
+        input.style.color = 'white';
+    }
+</script>
+
+
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
