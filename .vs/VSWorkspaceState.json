@@ -9,6 +9,6 @@
     "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css",
     "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines"
   ],
-  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines\\index.css",
+  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\Views\\Machines\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }
