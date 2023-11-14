@@ -20,7 +20,6 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             else if (pCustomer.Top_Aux == -1)
                 pCustomer.Top_Aux = 0;
             var customers = await customerBL.SearchAsync(pCustomer);
-            //var customers = await customerBL.SearchAsync(pCustomer);
             ViewBag.Top = pCustomer.Top_Aux;
             return View(customers);
         }
@@ -28,8 +27,8 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var customer = await customerBL.GetByIdAsync(new Customer { Id_Customer = id });
-            return View(customer);
+            var customers = await customerBL.GetByIdAsync(new Customer { Id_Customer = id });
+            return View(customers);
         }
 
         // GET: CustomerController/Create
@@ -59,9 +58,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Edit/5
         public async Task<IActionResult> Edit(Customer pCustomer)
         {
-            var customer = await customerBL.GetByIdAsync(pCustomer);
+            var customers = await customerBL.GetByIdAsync(pCustomer);
             ViewBag.Error = "";
-            return View();
+            return View(pCustomer);
         }
 
         // POST: CustomerController/Edit/5
@@ -85,8 +84,8 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> Delete(Customer pCustomer)
         {
             ViewBag.Error = "";
-            var customer = await customerBL.GetByIdAsync(pCustomer);
-            return View(customer);
+            var customers = await customerBL.GetByIdAsync(pCustomer);
+            return View();
         }
 
         // POST: CustomerController/Delete/5
