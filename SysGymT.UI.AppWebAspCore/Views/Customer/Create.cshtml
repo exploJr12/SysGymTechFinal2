@@ -49,8 +49,23 @@
             </div>
             <div class="form-group">
                 <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
+                <select asp-for="Gender" class="form-control">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otros">Otros</option>
+                </select>
                 <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Membership" class="control-label"></label>
+                <select asp-for="Membership" class="form-control">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Diaria">Diaria</option>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Mensual">Mensual</option>
+                </select>
+                <span asp-validation-for="Membership" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

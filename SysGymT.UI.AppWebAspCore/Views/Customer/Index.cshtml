@@ -3,11 +3,10 @@
 @{
     ViewData["Title"] = "Index";
 }
-
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Crear</a>
 </p>
 <table class="table">
     <thead>
@@ -36,42 +35,55 @@
             <th>
                 @Html.DisplayNameFor(model => model.Gender)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Membership)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name_Customer)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Last_Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DUI)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telephone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Weight)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Height)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_Customer">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_Customer">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_Customer">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name_Customer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Last_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DUI)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telephone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Height)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Membership)
+                </td>
+                <td>
+                <td class="botonestabla">
+                        @Html.ActionLink("Modificar", "Edit", new { Id_Customer = item.Id_Customer}, new { @class = "btn btn-success" })
+                </td>
+                <td class="botonestabla">
+                        @Html.ActionLink("Ver", "Details", new { Id_Customer = item.Id_Customer }, new { @class = "btn btn-info" })
+                </td>
+                <td class="botonestabla">
+                        @Html.ActionLink("Eliminar", "Delete", new { Id_Customer = item.Id_Customer }, new { @class = "btn btn-danger" })
+                </td>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
