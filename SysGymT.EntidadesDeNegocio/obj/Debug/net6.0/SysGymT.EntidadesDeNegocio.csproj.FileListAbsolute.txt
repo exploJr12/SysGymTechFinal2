@@ -152,3 +152,17 @@ C:\Users\repco\source\repos\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debu
 C:\Users\repco\source\repos\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
 C:\Users\repco\source\repos\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
 C:\Users\repco\source\repos\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.deps.json
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.runtimeconfig.json
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.AssemblyReference.cache
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfoInputs.cache
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.AssemblyInfo.cs
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\refint\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\SysGymT.EntidadesDeNegocio.genruntimeconfig.cache
+C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.EntidadesDeNegocio\obj\Debug\net6.0\ref\SysGymT.EntidadesDeNegocio.dll
