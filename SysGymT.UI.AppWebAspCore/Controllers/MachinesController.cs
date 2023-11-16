@@ -31,7 +31,6 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             return View(machines);
         }
 
-
         public async Task<IActionResult> Details(int Id_Machines)
         {
             var machine = await machinesBL.GetByIdAsync(new Machines { Id_Machines = Id_Machines });

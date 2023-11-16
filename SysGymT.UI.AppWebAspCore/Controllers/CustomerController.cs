@@ -25,9 +25,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         }
 
         // GET: CustomerController/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int Id_Customer)
         {
-            var customers = await customerBL.GetByIdAsync(new Customer { Id_Customer = id });
+            var customers = await customerBL.GetByIdAsync(new Customer { Id_Customer = Id_Customer });
             return View(customers);
         }
 

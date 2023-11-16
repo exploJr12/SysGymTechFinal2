@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RL4/+yedcXZDaGl8Hfz8W3XG83GyD7ItiGPxaw+Htck=",
+  "Hash": "wd8QEuzioOAs42+Qne6apEe980Aw3q2UmiyswGY0Yxo=",
   "Source": "SysGymT.UI.AppWebAspCore",
   "BasePath": "_content/SysGymT.UI.AppWebAspCore",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\uwu\\SysGymTechFinal1\\SysGymT.UI.AppWebAspCore\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SysGymT.UI.AppWebAspCore.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\uwu\\SysGymTechFinal1\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\customer\\globalCustomer.css",
+      "SourceId": "SysGymT.UI.AppWebAspCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\uwu\\SysGymTechFinal1\\SysGymT.UI.AppWebAspCore\\wwwroot\\",
+      "BasePath": "_content/SysGymT.UI.AppWebAspCore",
+      "RelativePath": "css/customer/globalCustomer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\customer\\globalCustomer.css"
     },
     {
       "Identity": "C:\\Users\\Not4l\\OneDrive\\Documents\\Personal Documents\\Programacion\\VS\\uwu\\SysGymTechFinal1\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\login.css",
