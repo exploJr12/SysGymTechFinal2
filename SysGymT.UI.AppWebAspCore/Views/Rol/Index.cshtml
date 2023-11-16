@@ -7,87 +7,67 @@
     int[] tops = { 10, 20, 50, 100, 500, 1000, -1 };
     int topActual = Convert.ToInt32(ViewBag.Top);
 }
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Roles</title>
+    <link rel="stylesheet" href="~/css/machines/index.css">
+</head>
+<h1 class="position-absolute top-70 start-50 translate-middle text-warning">Listado de Roles</h1>
+<p class="mt-5">
+    <a asp-action="Create" class="btn btn-warning">
+        Agregar
+        <img src="~/img/machines/add-icon.png" id="invert" />
+    </a>
+</p>
 
-<h1>Index</h1>
-<div class="row">
-    <div class="col-md-12">
-        <form asp-action="Index">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label class="control-label">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" />
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <label class="control-label">Top</label>
-                        <select name="top_aux" class="form-control">
-                            @foreach (var item in tops)
-                            {
-                                string strItem = item != -1 ? item.ToString() : "Todos";
-                                if (item != topActual)
-                                {
-                                    <option value="@item">@strItem</option>
-                                }
-                                else
-                                {
-                                    <option selected value="@item">@strItem</option>
-                                }
-                            }
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Buscar" class="btn btn-primary" />
-                <a asp-action="Create" class="btn btn-primary">Crear</a>
-            </div>
-        </form>
-    </div>
-</div>
-
-<table class="table table-responsive paginationjs">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th colspan="3">Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr data-page="@numPage">
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td class="botonestabla">
-                    @Html.ActionLink("Modificar", "Edit", new { Id_Rol = item.Id_Rol}, new { @class = "btn btn-success" })
-                </td>
-                <td class="botonestabla">
-                    @Html.ActionLink("Ver", "Details", new { Id_Rol = item.Id_Rol }, new { @class = "btn btn-info" })
-                </td>
-                <td class="botonestabla">
-                    @Html.ActionLink("Eliminar", "Delete", new { Id_Rol = item.Id_Rol }, new { @class = "btn btn-danger" })
-                </td>
+<div class="main-container mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th colspan="3" class="action-th">Acciones</th>
             </tr>
-            numRegistros++;
-            if (numRegistros == numRegistrosPorPage)
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
             {
-                numPage++;
-                numRegistros = 0;
+                <tr data-page="@numPage" class="table table-responsive paginationjs">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td class="botonestabla">
+                        <a asp-action="Edit" asp-route-Id_Rol="@item.Id_Rol" class="edit-button">
+                            <img src="~/img/machines/editar.png" class="image-inside-button" />
+                        </a>
+                    </td>
+                    <td class="botonestabla">
+                        @Html.ActionLink("Ver", "Details", new { Id_Rol = item.Id_Rol }, new { @class = "btn btn-warning" })
+
+                    </td>
+                    <td class="botonestabla">
+                        @Html.ActionLink("Eliminar", "Delete", new { Id_Rol = item.Id_Rol }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+                numRegistros++;
+                if (numRegistros == numRegistrosPorPage)
+                {
+                    numPage++;
+                    numRegistros = 0;
+                }
             }
-        }
-        @{
-            if (numRegistros == 0)
-            {
-                numPage--;
+            @{
+                if (numRegistros == 0)
+                {
+                    numPage--;
+                }
             }
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>
 @if (numPage > 1)
 {
     <div class="row" style="overflow:auto">
