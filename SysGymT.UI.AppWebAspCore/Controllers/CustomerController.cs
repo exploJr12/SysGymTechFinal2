@@ -58,9 +58,9 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         // GET: CustomerController/Edit/5
         public async Task<IActionResult> Edit(Customer pCustomer)
         {
-            var customers = await customerBL.GetByIdAsync(pCustomer);
+            var getCustomer = await customerBL.GetByIdAsync(pCustomer);
             ViewBag.Error = "";
-            return View(pCustomer);
+            return View(getCustomer);
         }
 
         // POST: CustomerController/Edit/5
@@ -70,7 +70,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         {
             try
             {
-                int result = await customerBL.ModifyAsync(pCustomer);
+                int getCustomer = await customerBL.ModifyAsync(pCustomer);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
@@ -84,8 +84,8 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
         public async Task<IActionResult> Delete(Customer pCustomer)
         {
             ViewBag.Error = "";
-            var customers = await customerBL.GetByIdAsync(pCustomer);
-            return View();
+            var getCustomer = await customerBL.GetByIdAsync(pCustomer);
+            return View(getCustomer);
         }
 
         // POST: CustomerController/Delete/5

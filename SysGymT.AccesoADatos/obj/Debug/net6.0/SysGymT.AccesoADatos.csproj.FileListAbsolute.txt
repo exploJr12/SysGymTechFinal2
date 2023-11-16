@@ -202,3 +202,20 @@ C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.AccesoADato
 C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.pdb
 C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.genruntimeconfig.cache
 C:\Users\nombr\OneDrive\Escritorio\PSGEsfe1\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\ref\SysGymT.AccesoADatos.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.AccesoADatos.deps.json
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.AccesoADatos.runtimeconfig.json
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.AccesoADatos.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.AccesoADatos.pdb
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.csproj.AssemblyReference.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.AssemblyInfoInputs.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.AssemblyInfo.cs
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.csproj.CoreCompileInputs.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.csproj.CopyComplete
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\refint\SysGymT.AccesoADatos.dll
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.pdb
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\SysGymT.AccesoADatos.genruntimeconfig.cache
+C:\Users\Not4l\OneDrive\Documents\Personal Documents\Programacion\VS\uwu\SysGymTechFinal1\SysGymT.AccesoADatos\obj\Debug\net6.0\ref\SysGymT.AccesoADatos.dll
