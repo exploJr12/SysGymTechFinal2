@@ -21,4 +21,8 @@
     <ProjectReference Include="..\SysGymT.LogicaDeNegocio\SysGymT.LogicaDeNegocio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\NewFolder\" />
+  </ItemGroup>
+
 </Project>

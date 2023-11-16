@@ -4,62 +4,75 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Maquinaria</title>
+    <link rel="stylesheet" href="~/css/machines/index.css">
+</head>
+<h1 class="position-absolute top-80 start-50 translate-middle text-warning">Listado de Usuarios</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Crear</a>
+    <a asp-action="Create" class="btn btn-warning" type="submit">
+        Agregar
+        <img src="~/img/machines/add-icon.png" id="invert" />
+    </a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre_Completo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Login)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estatus)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rol)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre_Completo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Login)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estatus)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rol.Name)
-            </td>
-            <td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Modificar", "Edit", new { Id_Usuario = item.Id_Usuario}, new { @class = "btn btn-success" })
-                </td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Ver", "Details", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-info" })
-                </td>
-                <td class="botonestabla">
-                        @Html.ActionLink("Eliminar", "Delete", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-danger" })
-                </td>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="main-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre_Completo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Login)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaRegistro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rol)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre_Completo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Login)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaRegistro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rol.Name)
+                    </td>
+                    <td>
+                    <td class="botonestabla">
+                            @Html.ActionLink("Modificar", "Edit", new { Id_Usuario = item.Id_Usuario}, new { @class = "btn btn-success" })
+                    </td>
+                    <td class="botonestabla">
+                            @Html.ActionLink("Ver", "Details", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-info" })
+                    </td>
+                    <td class="botonestabla">
+                            @Html.ActionLink("Eliminar", "Delete", new { Id_Usuario = item.Id_Usuario }, new { @class = "btn btn-danger" })
+                    </td>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
