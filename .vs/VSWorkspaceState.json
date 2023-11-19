@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\SysGymT.UI.AppWebAspCore",
+    "\\SysGymT.UI.AppWebAspCore\\Controllers",
     "\\SysGymT.UI.AppWebAspCore\\Views",
     "\\SysGymT.UI.AppWebAspCore\\Views\\Machines",
     "\\SysGymT.UI.AppWebAspCore\\Views\\Shared",
@@ -9,6 +10,6 @@
     "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css",
     "\\SysGymT.UI.AppWebAspCore\\wwwroot\\css\\machines"
   ],
-  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\Views\\Machines\\Create.cshtml",
+  "SelectedNode": "\\SysGymT.UI.AppWebAspCore\\Controllers\\MachinesController.cs",
   "PreviewInSolutionExplorer": false
 }
