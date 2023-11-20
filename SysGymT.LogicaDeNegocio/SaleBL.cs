@@ -10,7 +10,7 @@ namespace SysGymT.LogicaDeNegocio
 {
     public class SaleBL
     {
-        public async Task<int>createAsync(Sale sale)
+        public async Task<int> CreateAsync(Sale sale)
         {
             return await SaleDAL.Create(sale);
         }
