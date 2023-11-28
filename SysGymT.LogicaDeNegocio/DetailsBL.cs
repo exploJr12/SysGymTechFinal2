@@ -16,25 +16,29 @@ namespace SysGymT.LogicaDeNegocio
         {
             return await DetailsDAL.Create(details);
         }
-
         public async Task<int> ModifyAsync(Details details)
         {
             return await DetailsDAL.Modify(details);
         }
-
         public async Task<int> DeleteAsync(Details details)
         {
             return await DetailsDAL.Delete(details);
         }
-
         public async Task<Details> getByIdAsync(Details details)
         {
             return await DetailsDAL.GetById(details);
         }
-
         public async Task<List<Details>> GetAllDetails(Details details)
         {
             return await DetailsDAL.GetAll();
+        }
+        public async Task<List<Details>> SearchAllAsync(Details pDetails)
+        {
+            return await DetailsDAL.SearchAllDetailsAsync(pDetails);
+        }
+        public static async Task<List<Details>> SearchIncludeProductsAsyn(Details pDetails)
+        {
+            return await DetailsDAL.SearchIncludeProductsAsync(pDetails);
         }
     }
 }
