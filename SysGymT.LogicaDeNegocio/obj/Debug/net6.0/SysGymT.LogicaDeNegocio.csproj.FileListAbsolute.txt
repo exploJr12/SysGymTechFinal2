@@ -246,3 +246,22 @@ C:\Users\ALUMNO\Desktop\PSGEsfe1\SysGymTechFinal1\SysGymT.LogicaDeNegocio\obj\De
 C:\Users\ALUMNO\Desktop\PSGEsfe1\SysGymTechFinal1\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.genruntimeconfig.cache
 C:\Users\ALUMNO\Desktop\PSGEsfe1\SysGymTechFinal1\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\ref\SysGymT.LogicaDeNegocio.dll
 C:\Users\repco\source\repos\SysGymTechFinal1\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.sourcelink.json
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.LogicaDeNegocio.deps.json
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.LogicaDeNegocio.runtimeconfig.json
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.LogicaDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.LogicaDeNegocio.pdb
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.AccesoADatos.dll
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.AccesoADatos.pdb
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\bin\Debug\net6.0\SysGymT.EntidadesDeNegocio.pdb
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.csproj.AssemblyReference.cache
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.AssemblyInfoInputs.cache
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.AssemblyInfo.cs
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.csproj.CopyComplete
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\refint\SysGymT.LogicaDeNegocio.dll
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.pdb
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\SysGymT.LogicaDeNegocio.genruntimeconfig.cache
+C:\Users\nombr\OneDrive\Escritorio\Nueva carpeta\SysGymTechFinal2\SysGymT.LogicaDeNegocio\obj\Debug\net6.0\ref\SysGymT.LogicaDeNegocio.dll
