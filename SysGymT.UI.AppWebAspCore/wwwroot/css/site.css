@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow-x: hidden;
-    background-color: #cfd8dc;
+    background-color: #000000;
 }
 
 body,
@@ -54,9 +54,8 @@ html {
     width: 100%;
     padding-top: 70px;
 }
-
+/*cambiar a relative aside esta absolute object quitar*/
 #wrapper.toggled #page-content-wrapper {
-    position: absolute;
     margin-right: -220px;
 }
 
