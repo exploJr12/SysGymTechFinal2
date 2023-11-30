@@ -22,6 +22,7 @@ namespace SysGymT.UI.AppWebAspCore.Controllers
             var taskSearch = detailsBL.SearchAllAsync(pDetails);
             var taskGetAllProducts = productsBL.GetByIdAsync(new Products { Id_Products = pDetails.Id_products });
             var details = await taskSearch;
+            //var details = await taskSearch;
             ViewBag.top = pDetails.Top_Aux;
             ViewBag.Products = await productsBL.GetallAsync();
             return View(details);
