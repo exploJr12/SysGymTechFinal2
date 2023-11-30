@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow-x: hidden;
-    background-color: #000000;
+    background-color: #2B2A24;
 }
 
 body,
@@ -54,7 +54,7 @@ html {
     width: 100%;
     padding-top: 70px;
 }
-/*cambiar a relative aside esta absolute object quitar*/
+/*cambiar a relative si esta absolute object quitar*/
 #wrapper.toggled #page-content-wrapper {
     margin-right: -220px;
 }
@@ -157,8 +157,7 @@ html {
     text-align: center;
     font-size: 1em;
     color: #ddd;
-    background: #212531;
-    background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+    background: #212531);
 }
 
 .sidebar-nav .dropdown-menu {
