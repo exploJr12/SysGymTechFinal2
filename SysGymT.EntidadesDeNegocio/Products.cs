@@ -32,7 +32,7 @@ namespace SysGymT.EntidadesDeNegocio
         public String Brand { get; set; }
         [Required]
         public decimal Price { get; set; }
-        public Details Details { get; set; }
+        public List<Sale> Sales{ get; set; }
         [NotMapped]
         public int Top_Aux { get; set; }
     }
