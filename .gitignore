@@ -1,1 +1,23 @@
+# Ignorar archivos binarios y de compilación
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.genruntimeconfig.cache
+
+# Ignorar archivos de configuración
+*.sourcelink.json
+*.csproj.CopyComplete
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute.txt
+
+# Ignorar carpetas bin y obj
+bin/
+obj/
+
+# Ignorar archivos de publicación
+Properties/PublishProfiles/*.pubxml.user
 *.suo
+
+
+sampele esta madre al git ignore
