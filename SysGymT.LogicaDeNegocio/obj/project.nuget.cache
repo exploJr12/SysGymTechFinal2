@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Ts5BXYxpT5Xihfre69OekvvAMlE0mpjoJ6whVXyZ7cb+XzSqQSOqNPPyAZf4F0jLkELnkLFL7VcNj5miwSV/g==",
+  "dgSpecHash": "ftQEv73DehI/qc0E97CEgO+t8BM8Q7gfUbqEJa3JxVb5HwjQyRsTHtUDp8kEA+NUTHKa3dnHLNOYM/sJScRVsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\repco\\source\\repos\\SysGymTechFinal1\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
+  "projectFilePath": "C:\\Users\\repco\\source\\repos\\SysGymTechFinal2\\SysGymT.LogicaDeNegocio\\SysGymT.LogicaDeNegocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\repco\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\repco\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
